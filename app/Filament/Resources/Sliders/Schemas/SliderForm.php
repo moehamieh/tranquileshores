@@ -25,9 +25,7 @@ class SliderForm
                     ->disk('public')
                     ->directory('sliders')
                     ->visibility('public')
-                    ->imageEditor()
                     ->imagePreviewHeight('200')
-
                     ->required(),
                 RichEditor::make('description')
                     ->toolbarButtons([

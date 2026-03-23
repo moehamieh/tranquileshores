@@ -30,7 +30,7 @@
                 <div class="col-lg-4 order-2 order-lg-1" data-aos="fade-right">
                     <div class="service-sidebar">
                         <!-- Our Services Card -->
-                        <div class="sidebar-card bg-card-yellow mb-4">
+                        <div class="sidebar-card mb-4" style="background-color: {{ $service->bg_color ?? '#FAEEB5' }}">
                             <h3 class="sidebar-title serif-font mb-4">Our Services</h3>
                             <ul class="sidebar-services-list list-unstyled">
                                 @foreach($all_services as $s)

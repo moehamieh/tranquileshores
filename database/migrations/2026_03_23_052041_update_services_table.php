@@ -22,7 +22,7 @@ return new class extends Migration {
                 $table->integer('order')->default(0)->after('status');
             }
             if (!Schema::hasColumn('services', 'bg_color')) {
-                $table->string('bg_color')->default('bg-card-white')->after('order');
+                $table->string('bg_color')->default('#FBF7F4')->after('order');
             }
         });
     }

@@ -62,6 +62,15 @@ class ServiceForm
                 TextInput::make('order')
                     ->numeric()
                     ->default(0),
+                Select::make('bg_color')
+                    ->options([
+                        '#FBF7F4' => 'Beige (#FBF7F4)',
+                        '#FAEEB5' => 'Yellow (#FAEEB5)',
+                        '#B5C8B8' => 'Green (#B5C8B8)',
+                        '#F8DAD2' => 'Pink (#F8DAD2)',
+                    ])
+                    ->default('#FBF7F4')
+                    ->required(),
                 Select::make('status')
                     ->options(PublishStatus::class)
                     ->default(PublishStatus::Draft->value)

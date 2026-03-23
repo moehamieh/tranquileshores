@@ -31,7 +31,8 @@ class TherapistForm
                 FileUpload::make('image')
                     ->disk('public')
                     ->image()
-                    ->directory('therapists'),
+                    ->directory('therapists')
+                    ->visibility('public'),
                 TextInput::make('phone')
                     ->tel(),
                 TextInput::make('office_phone')

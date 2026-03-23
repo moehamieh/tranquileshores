@@ -42,9 +42,9 @@ class ContactResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListContacts::route('/'),
-            'create' => CreateContact::route('/create'),
-            'edit' => EditContact::route('/{record}/edit'),
+//            'index' => ListContacts::route('/'),
+//            'create' => CreateContact::route('/create'),
+//            'edit' => EditContact::route('/{record}/edit'),
         ];
     }
 

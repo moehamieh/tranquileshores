@@ -92,7 +92,7 @@ class DatabaseSeeder extends Seeder
             'category_id' => $catServIndiv->id,
             'status' => PublishStatus::Published,
             'order' => 1,
-            'bg_color' => 'bg-card-yellow'
+            'bg_color' => '#FAEEB5'
         ]);
 
         ServiceAccordion::create([
@@ -118,7 +118,33 @@ class DatabaseSeeder extends Seeder
             'category_id' => $catServIndiv->id,
             'status' => PublishStatus::Published,
             'order' => 2,
-            'bg_color' => 'bg-card-white'
+            'bg_color' => '#FBF7F4'
+        ]);
+
+        Service::create([
+            'title' => 'Couples Therapy',
+            'slug' => 'couples-therapy',
+            'subtitle' => 'Strengthen your bond together.',
+            'description' => 'Navigate relationship challenges with professional guidance.',
+            'image' => 'https://images.unsplash.com/photo-1516589174184-c68d196f4544?auto=format&fit=crop&w=800',
+            'icon' => 'https://images.unsplash.com/photo-1516589174184-c68d196f4544?auto=format&fit=crop&w=800',
+            'category_id' => $catServIndiv->id,
+            'status' => PublishStatus::Published,
+            'order' => 3,
+            'bg_color' => '#B5C8B8'
+        ]);
+
+        Service::create([
+            'title' => 'Teen Therapy',
+            'slug' => 'teen-therapy',
+            'subtitle' => 'Support for the younger generation.',
+            'description' => 'Helping adolescents manage stress, school, and identity.',
+            'image' => 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800',
+            'icon' => 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800',
+            'category_id' => $catServIndiv->id,
+            'status' => PublishStatus::Published,
+            'order' => 4,
+            'bg_color' => '#F8DAD2'
         ]);
 
         // 5. Posts
