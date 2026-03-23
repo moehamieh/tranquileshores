@@ -4,11 +4,13 @@ namespace App\Filament\Resources\Services\Schemas;
 
 use App\PublishStatus;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
+use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
-use Filament\Forms\Components\RichEditor;
+use Illuminate\Support\Str;
 
 class ServiceForm
 {
@@ -17,20 +19,32 @@ class ServiceForm
         return $schema
             ->components([
                 TextInput::make('title')
-                    ->required(),
+                    ->required()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                TextInput::make('slug')
+                    ->required()
+                    ->unique(ignoreRecord: true),
+                TextInput::make('subtitle'),
                 FileUpload::make('image')
                     ->label('Image 600*400')
                     ->image()
                     ->disk('public')
-                    ->directory('categories')
+                    ->directory('services')
                     ->visibility('public')
-                    ->imageEditor()
                     ->imagePreviewHeight('200')
-                    // ->imageAspectRatio('16:9')
-                    // ->automaticallyOpenImageEditorForAspectRatio()
-
-                    // ->maxSize(2048)
                     ->required(),
+                FileUpload::make('icon')
+                    ->label('Icon Image')
+                    ->image()
+                    ->disk('public')
+                    ->directory('services/icons')
+                    ->visibility('public')
+                    ->required(),
+                Select::make('category_id')
+                    ->relationship('category', 'name', fn($query) => $query->where('type', 'service'))
+                    ->searchable()
+                    ->preload(),
                 RichEditor::make('description')
                     ->toolbarButtons([
                         'bold',
@@ -45,9 +59,12 @@ class ServiceForm
                         'redo',
                     ])
                     ->columnSpanFull(),
+                TextInput::make('order')
+                    ->numeric()
+                    ->default(0),
                 Select::make('status')
                     ->options(PublishStatus::class)
-                    ->default('draft')
+                    ->default(PublishStatus::Draft->value)
                     ->required(),
             ]);
     }

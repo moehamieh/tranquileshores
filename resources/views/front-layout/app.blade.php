@@ -38,9 +38,9 @@
                             <div class="mega-menu-image d-none d-lg-block"></div>
                             <div class="mega-menu-links">
                                 <ul class="list-unstyled mb-0">
-                                    <li><a class="dropdown-item" href="{{ route('service-detail') }}">Individual Therapy</a></li>
-                                    <li><a class="dropdown-item" href="#">Couples Therapy</a></li>
-                                    <li><a class="dropdown-item" href="#">Family Counseling</a></li>
+                                    @foreach($nav_services as $nav_service)
+                                        <li><a class="dropdown-item" href="{{ route('service-details', $nav_service->slug) }}">{{ $nav_service->title }}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -51,12 +51,12 @@
                         Therapists
                     </a>
                     <ul class="dropdown-menu border-0 shadow-sm">
-                        <li><a class="dropdown-item" href="{{ route('therapist-profile') }}">Dr. Emily Carter</a></li>
-                        <li><a class="dropdown-item" href="#">Dr. Michael Chen</a></li>
-                        <li><a class="dropdown-item" href="#">Dr. Emily Davis</a></li>
+                        @foreach($nav_therapists as $nav_therapist)
+                            <li><a class="dropdown-item" href="{{ route('therapist-profile', $nav_therapist->slug) }}">{{ $nav_therapist->name }}</a></li>
+                        @endforeach
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link {{ request()->routeIs('blog-details') ? 'active' : '' }}" href="{{ route('blog-details') }}">Blog</a></li>
+                <li class="nav-item"><a class="nav-link {{ request()->routeIs('blogs') ? 'active' : '' }}" href="{{ route('blogs') }}">Blog</a></li>
                 <li class="nav-item"><a class="nav-link {{ request()->routeIs('contact-us') ? 'active' : '' }}" href="{{ route('contact-us') }}">Contact</a></li>
             </ul>
             <div class="d-flex align-items-center gap-3">
@@ -85,9 +85,9 @@
                 </a>
                 <div class="dropdown-menu border-0 shadow-sm bg-transparent">
                     <ul class="list-unstyled mb-0">
-                        <li><a class="dropdown-item text-white" href="#">Individual Therapy</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Couples Therapy</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Family Counseling</a></li>
+                        @foreach($nav_services as $nav_service)
+                            <li><a class="dropdown-item text-white" href="{{ route('service-details', $nav_service->slug) }}">{{ $nav_service->title }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </li>
@@ -97,14 +97,13 @@
                 </a>
                 <div class="dropdown-menu border-0 shadow-sm bg-transparent">
                     <ul class="list-unstyled mb-0">
-                        <li><a class="dropdown-item text-white" href="#">Dr. Sarah Johnson</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Dr. Michael Chen</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Dr. Emily Davis</a></li>
-
+                        @foreach($nav_therapists as $nav_therapist)
+                            <li><a class="dropdown-item text-white" href="{{ route('therapist-profile', $nav_therapist->slug) }}">{{ $nav_therapist->name }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </li>
-            <li class="nav-item"><a class="drawer-link {{ request()->routeIs('blog-details') ? 'active' : '' }}" href="{{ route('blog-details') }}">Blog</a></li>
+            <li class="nav-item"><a class="drawer-link {{ request()->routeIs('blogs') ? 'active' : '' }}" href="{{ route('blogs') }}">Blog</a></li>
             <li class="nav-item"><a class="drawer-link" href="#">Contact</a></li>
         </ul>
         <div class="drawer-footer mt-auto">
@@ -155,24 +154,18 @@
             <div class="col-md-3">
                 <h5 class="footer-section-title">Services</h5>
                 <ul class="footer-list">
-                    <li>Individual Therapy</li>
-                    <li>Couples Therapy</li>
-                    <li>Family Counseling</li>
-                    <li>Teen Therapy</li>
-                    <li>Depression Therapy</li>
-                    <li>Supportive Counseling</li>
+                    @foreach($nav_services->take(6) as $nav_service)
+                        <li><a href="{{ route('service-details', $nav_service->slug) }}" class="text-white text-decoration-none opacity-75">{{ $nav_service->title }}</a></li>
+                    @endforeach
                 </ul>
             </div>
 
             <div class="col-md-3">
                 <h5 class="footer-section-title">Our Therapists</h5>
                 <ul class="footer-list">
-                    <li>Dr. Emily Carter, PhD</li>
-                    <li>Michael Johnson, LCSW</li>
-                    <li>Dr. Sarah Mitchell, PsyD</li>
-                    <li>Dr. Laura Bennett, PsyD</li>
-                    <li>Daniel Rossi, LMFT</li>
-                    <li>Sofia Klein, MA, LPC</li>
+                    @foreach($nav_therapists->take(6) as $nav_therapist)
+                        <li><a href="{{ route('therapist-profile', $nav_therapist->slug) }}" class="text-white text-decoration-none opacity-75">{{ $nav_therapist->name }}</a></li>
+                    @endforeach
                 </ul>
             </div>
 

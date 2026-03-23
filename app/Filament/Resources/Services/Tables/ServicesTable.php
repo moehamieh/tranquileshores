@@ -17,15 +17,30 @@ class ServicesTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->reorderable('order')
             ->columns([
                 TextColumn::make('title')
+                    ->searchable(),
+                TextColumn::make('slug')
+                    ->searchable(),
+                TextColumn::make('subtitle')
                     ->searchable(),
                 ImageColumn::make('image')
                     ->square()
                     ->imageHeight(50)
                     ->disk('public'),
+                ImageColumn::make('icon')
+                    ->label('Icon')
+                    ->square()
+                    ->imageHeight(50)
+                    ->disk('public'),
+                TextColumn::make('category.name')
+                    ->sortable(),
                 TextColumn::make('status')
                     ->badge(),
+                TextColumn::make('order')
+                    ->numeric()
+                    ->sortable(),
                 TextColumn::make('deleted_at')
                     ->dateTime()
                     ->sortable()

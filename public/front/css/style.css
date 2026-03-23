@@ -614,7 +614,6 @@ a:hover { color: var(--teal-main); }
     min-height: 80vh;
     border-radius: 40px;
     /* Placeholder: REPLACE with your background image URL */
-    background: url('../images/80-home-1.webp') no-repeat center;
     background-size: cover;
     display: flex; align-items: center; text-align: left;
 }

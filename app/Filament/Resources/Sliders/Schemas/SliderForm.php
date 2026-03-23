@@ -46,8 +46,11 @@ class SliderForm
                     ->columnSpanFull(),
                 Select::make('status')
                     ->options(PublishStatus::class)
-                    ->default('draft')
+                    ->default(PublishStatus::Draft->value)
                     ->required(),
+                TextInput::make('order')
+                    ->numeric()
+                    ->default(0),
             ]);
     }
 }

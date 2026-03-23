@@ -17,6 +17,7 @@ class SlidersTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->reorderable('order')
             ->columns([
                 TextColumn::make('title')
                     ->searchable(),
@@ -26,6 +27,9 @@ class SlidersTable
                     ->disk('public'),
                 TextColumn::make('status')
                     ->badge(),
+                TextColumn::make('order')
+                    ->numeric()
+                    ->sortable(),
                 TextColumn::make('deleted_at')
                     ->dateTime()
                     ->sortable()
