@@ -18,8 +18,6 @@ class PricingPlanResource extends Resource
 {
     protected static ?string $model = PricingPlan::class;
 
-    protected static ?int $navigationSort = 8;
-
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedCreditCard;
 
     protected static ?string $recordTitleAttribute = 'title';

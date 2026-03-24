@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources\HowItWorks\Schemas;
 
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
 use Filament\Schemas\Schema;
 
 class HowItWorksForm
@@ -16,7 +16,7 @@ class HowItWorksForm
                     ->required(),
                 TextInput::make('title')
                     ->required(),
-                Textarea::make('description')
+                RichEditor::make('description')
                     ->required()
                     ->columnSpanFull(),
                 TextInput::make('order')

@@ -4,9 +4,9 @@ namespace App\Filament\Resources\PricingPlans\Schemas;
 
 use App\PublishStatus;
 use Filament\Forms\Components\Repeater;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
 use Filament\Schemas\Schema;
 
 class PricingPlanForm
@@ -24,7 +24,7 @@ class PricingPlanForm
                 TextInput::make('unit')
                     ->required()
                     ->default('per 50 minute session'),
-                Textarea::make('description')
+                RichEditor::make('description')
                     ->columnSpanFull(),
                 Repeater::make('features')
                     ->simple(

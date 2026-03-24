@@ -19,6 +19,8 @@ class PostsTable
             ->columns([
                 TextColumn::make('title')
                     ->searchable(),
+                TextColumn::make('slug')
+                    ->searchable(),
                 ImageColumn::make('main_image'),
                 TextColumn::make('author.name')
                     ->sortable(),

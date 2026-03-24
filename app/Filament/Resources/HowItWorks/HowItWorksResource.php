@@ -18,10 +18,6 @@ class HowItWorksResource extends Resource
 {
     protected static ?string $model = HowItWorks::class;
 
-    protected static ?string $navigationLabel = 'How it work';
-
-    protected static ?int $navigationSort = 7;
-
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedLightBulb;
 
     protected static ?string $recordTitleAttribute = 'title';

@@ -4,7 +4,6 @@ namespace App\Models;
 
 use App\PublishStatus;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Str;
 
 class Therapist extends Model
 {
@@ -13,16 +12,6 @@ class Therapist extends Model
         'education', 'certification', 'expertise', 'practice_years', 'min_price',
         'social_links', 'tags', 'status'
     ];
-
-    protected static function booted()
-    {
-        static::saving(function ($model) {
-            if ($model->isDirty('name') || !$model->slug) {
-                $model->slug = Str::slug($model->name);
-            }
-        });
-    }
-
     protected $casts = [
         'education' => 'array',
         'social_links' => 'array',

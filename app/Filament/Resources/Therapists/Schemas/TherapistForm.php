@@ -5,11 +5,13 @@ namespace App\Filament\Resources\Therapists\Schemas;
 use App\PublishStatus;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Repeater;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
+use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Str;
 
 class TherapistForm
 {
@@ -18,7 +20,12 @@ class TherapistForm
         return $schema
             ->components([
                 TextInput::make('name')
-                    ->required(),
+                    ->required()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                TextInput::make('slug')
+                    ->required()
+                    ->unique(ignoreRecord: true),
                 TextInput::make('role')
                     ->required(),
                 FileUpload::make('image')
@@ -33,7 +40,7 @@ class TherapistForm
                 TextInput::make('email')
                     ->label('Email address')
                     ->email(),
-                Textarea::make('bio')
+                RichEditor::make('bio')
                     ->columnSpanFull(),
                 Repeater::make('education')
                     ->schema([

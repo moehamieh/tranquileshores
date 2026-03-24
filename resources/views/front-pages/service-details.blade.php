@@ -76,16 +76,40 @@
                         <div class="why-therapy-section mb-5">
                             <h2 class="section-title serif-font mb-4">Why Therapy Works</h2>
                             <div class="accordion custom-accordion" id="therapyAccordion">
-                                @foreach($service->accordions as $index => $accordion)
+                                @php
+                                    $staticAccordions = [
+                                        [
+                                            'id' => 'personal-attention',
+                                            'title' => 'Personal Attention',
+                                            'content' => 'Your sessions are fully focused on you – your experiences, emotions, and personal goals – ensuring support that feels attentive, respectful, and truly individualized.'
+                                        ],
+                                        [
+                                            'id' => 'safe-confidential',
+                                            'title' => 'Safe, Confidential Space',
+                                            'content' => 'A supportive and judgment-free environment where your privacy is respected, allowing you to speak openly and feel emotionally secure throughout the therapeutic process.'
+                                        ],
+                                        [
+                                            'id' => 'tailored-strategies',
+                                            'title' => 'Tailored Coping Strategies',
+                                            'content' => 'Practical tools and techniques carefully adapted to your situation, helping you manage stress, emotions, and challenges in a way that fits your life and pace.'
+                                        ],
+                                        [
+                                            'id' => 'long-term-stability',
+                                            'title' => 'Long-Term Emotional Stability',
+                                            'content' => 'Therapy focused not only on immediate relief, but on building resilience, self-awareness, and emotional balance that supports lasting well-being.'
+                                        ]
+                                    ];
+                                @endphp
+                                @foreach($staticAccordions as $index => $accordion)
                                     <div class="accordion-item mb-3 border-0 rounded-4 overflow-hidden {{ $index == 0 ? 'active-item' : 'shadow-sm' }}">
-                                        <h2 class="accordion-header" id="heading{{ $accordion->id }}">
-                                            <button class="accordion-button {{ $index == 0 ? '' : 'collapsed' }} rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $accordion->id }}" aria-expanded="{{ $index == 0 ? 'true' : 'false' }}" aria-controls="collapse{{ $accordion->id }}">
-                                                {{ $accordion->title }}
+                                        <h2 class="accordion-header" id="heading{{ $accordion['id'] }}">
+                                            <button class="accordion-button {{ $index == 0 ? '' : 'collapsed' }} rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $accordion['id'] }}" aria-expanded="{{ $index == 0 ? 'true' : 'false' }}" aria-controls="collapse{{ $accordion['id'] }}">
+                                                {{ $accordion['title'] }}
                                             </button>
                                         </h2>
-                                        <div id="collapse{{ $accordion->id }}" class="accordion-collapse collapse {{ $index == 0 ? 'show' : '' }}" aria-labelledby="heading{{ $accordion->id }}" data-bs-parent="#therapyAccordion">
+                                        <div id="collapse{{ $accordion['id'] }}" class="accordion-collapse collapse {{ $index == 0 ? 'show' : '' }}" aria-labelledby="heading{{ $accordion['id'] }}" data-bs-parent="#therapyAccordion">
                                             <div class="accordion-body pt-0">
-                                                {{ $accordion->content }}
+                                                {{ $accordion['content'] }}
                                             </div>
                                         </div>
                                     </div>

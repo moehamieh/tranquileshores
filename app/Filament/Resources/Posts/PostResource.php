@@ -18,8 +18,6 @@ class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
 
-    protected static ?int $navigationSort = 3;
-
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedDocumentText;
 
     protected static ?string $recordTitleAttribute = 'title';

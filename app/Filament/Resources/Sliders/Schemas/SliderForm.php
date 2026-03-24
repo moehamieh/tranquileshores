@@ -8,7 +8,6 @@ use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\RichEditor\RichContentAttribute;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
 use Filament\Schemas\Schema;
 
 class SliderForm

@@ -10,7 +10,6 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Textarea;
 use Filament\Schemas\Schema;
 
 class PostForm
@@ -23,13 +22,13 @@ class PostForm
                     ->label('Title')
                     ->required(),
                 FileUpload::make('main_image')
-                    ->label('Main Image')
+                    ->label('Main Image 1920 * 1080')
                     ->image()
                     ->disk('public')
                     ->directory('blog')
                     ->visibility('public')
                     ->required(),
-                FileUpload::make('additional_images')
+                FileUpload::make('additional_images 390 * 530')
                     ->label('Additional Images')
                     ->image()
                     ->disk('public')
@@ -37,7 +36,7 @@ class PostForm
                     ->visibility('public')
                     ->multiple()
                     ->reorderable(),
-                Textarea::make('summary')
+                RichEditor::make('summary')
                     ->columnSpanFull(),
                 RichEditor::make('content')
                     ->required()

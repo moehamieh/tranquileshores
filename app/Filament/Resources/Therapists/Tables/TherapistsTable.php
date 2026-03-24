@@ -19,6 +19,8 @@ class TherapistsTable
             ->columns([
                 TextColumn::make('name')
                     ->searchable(),
+                TextColumn::make('slug')
+                    ->searchable(),
                 TextColumn::make('role')
                     ->searchable(),
                 ImageColumn::make('image'),
