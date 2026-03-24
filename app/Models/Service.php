@@ -16,7 +16,6 @@ class Service extends Model
         'subtitle',
         'description',
         'image',
-        'icon',
         'category_id',
         'status',
         'order',
@@ -31,16 +30,6 @@ class Service extends Model
     protected $casts = [
         'status' => PublishStatus::class
     ];
-
-    public function getIconUrlAttribute()
-    {
-        $value = $this->attributes['icon'] ?? null;
-        if (!$value) return null;
-        if (str_starts_with($value, 'http') || str_starts_with($value, 'front/')) {
-            return $value;
-        }
-        return 'storage/' . $value;
-    }
 
     public function getImageUrlAttribute()
     {

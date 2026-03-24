@@ -29,11 +29,6 @@ class ServicesTable
                     ->square()
                     ->imageHeight(50)
                     ->disk('public'),
-                ImageColumn::make('icon')
-                    ->label('Icon')
-                    ->square()
-                    ->imageHeight(50)
-                    ->disk('public'),
                 TextColumn::make('category.name')
                     ->sortable(),
                 TextColumn::make('status')
