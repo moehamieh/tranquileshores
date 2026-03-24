@@ -12,6 +12,15 @@ class Therapist extends Model
         'education', 'certification', 'expertise', 'practice_years', 'min_price',
         'social_links', 'tags', 'status'
     ];
+
+    protected static function booted()
+    {
+        static::saving(function ($therapist) {
+            if ($therapist->isDirty('name')) {
+                $therapist->slug = \Illuminate\Support\Str::slug($therapist->name);
+            }
+        });
+    }
     protected $casts = [
         'education' => 'array',
         'social_links' => 'array',

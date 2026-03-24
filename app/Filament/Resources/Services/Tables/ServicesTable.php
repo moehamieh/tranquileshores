@@ -21,16 +21,9 @@ class ServicesTable
             ->columns([
                 TextColumn::make('title')
                     ->searchable(),
-                TextColumn::make('slug')
-                    ->searchable(),
                 TextColumn::make('subtitle')
                     ->searchable(),
                 ImageColumn::make('image')
-                    ->square()
-                    ->imageHeight(50)
-                    ->disk('public'),
-                ImageColumn::make('icon')
-                    ->label('Icon')
                     ->square()
                     ->imageHeight(50)
                     ->disk('public'),

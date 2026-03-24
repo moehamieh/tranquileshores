@@ -11,6 +11,15 @@ class Post extends Model
         'title', 'slug', 'main_image', 'additional_images', 'summary', 'content',
         'author_id', 'category_id', 'status', 'published_at'
     ];
+
+    protected static function booted()
+    {
+        static::saving(function ($post) {
+            if ($post->isDirty('title')) {
+                $post->slug = \Illuminate\Support\Str::slug($post->title);
+            }
+        });
+    }
     protected $casts = [
         'additional_images' => 'array',
         'published_at' => 'datetime',

@@ -21,6 +21,15 @@ class Service extends Model
         'order',
         'bg_color'
     ];
+
+    protected static function booted()
+    {
+        static::saving(function ($service) {
+            if ($service->isDirty('title')) {
+                $service->slug = \Illuminate\Support\Str::slug($service->title);
+            }
+        });
+    }
     public function category() {
         return $this->belongsTo(Category::class);
     }
