@@ -21,8 +21,6 @@ class ServicesTable
             ->columns([
                 TextColumn::make('title')
                     ->searchable(),
-                TextColumn::make('slug')
-                    ->searchable(),
                 TextColumn::make('subtitle')
                     ->searchable(),
                 ImageColumn::make('image')

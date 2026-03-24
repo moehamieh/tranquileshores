@@ -5,6 +5,7 @@ namespace App\Models;
 use App\PublishStatus;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Str;
 
 class Service extends Model
 {
@@ -21,6 +22,16 @@ class Service extends Model
         'order',
         'bg_color'
     ];
+
+    protected static function booted()
+    {
+        static::saving(function ($model) {
+            if ($model->isDirty('title') || !$model->slug) {
+                $model->slug = Str::slug($model->title);
+            }
+        });
+    }
+
     public function category() {
         return $this->belongsTo(Category::class);
     }

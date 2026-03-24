@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\PublishStatus;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Post extends Model
 {
@@ -11,6 +12,16 @@ class Post extends Model
         'title', 'slug', 'main_image', 'additional_images', 'summary', 'content',
         'author_id', 'category_id', 'status', 'published_at'
     ];
+
+    protected static function booted()
+    {
+        static::saving(function ($model) {
+            if ($model->isDirty('title') || !$model->slug) {
+                $model->slug = Str::slug($model->title);
+            }
+        });
+    }
+
     protected $casts = [
         'additional_images' => 'array',
         'published_at' => 'datetime',

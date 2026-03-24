@@ -18,6 +18,8 @@ class TherapistResource extends Resource
 {
     protected static ?string $model = Therapist::class;
 
+    protected static ?int $navigationSort = 6;
+
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedUserGroup;
 
     protected static ?string $recordTitleAttribute = 'name';

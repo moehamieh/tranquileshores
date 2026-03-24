@@ -11,9 +11,7 @@ use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
-use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
-use Illuminate\Support\Str;
 
 class PostForm
 {
@@ -23,13 +21,7 @@ class PostForm
             ->components([
                 TextInput::make('title')
                     ->label('Title')
-                    ->required()
-                    ->live(onBlur: true)
-                    ->afterStateUpdated(fn(Set $set, ?string $state) => $set('slug', Str::slug($state))),
-                TextInput::make('slug')
-                    ->label('Slug')
-                    ->required()
-                    ->unique(ignoreRecord: true),
+                    ->required(),
                 FileUpload::make('main_image')
                     ->label('Main Image')
                     ->image()

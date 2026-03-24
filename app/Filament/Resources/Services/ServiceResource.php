@@ -20,6 +20,10 @@ class ServiceResource extends Resource
 {
     protected static ?string $model = Service::class;
 
+    protected static string|\UnitEnum|null $navigationGroup = 'Services Managment';
+
+    protected static ?int $navigationSort = 5;
+
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedWrenchScrewdriver;
 
     protected static ?string $recordTitleAttribute = 'title';

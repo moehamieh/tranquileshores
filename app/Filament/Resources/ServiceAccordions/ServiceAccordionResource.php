@@ -18,6 +18,10 @@ class ServiceAccordionResource extends Resource
 {
     protected static ?string $model = ServiceAccordion::class;
 
+    protected static string|\UnitEnum|null $navigationGroup = 'Services Managment';
+
+    protected static ?int $navigationSort = 4;
+
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedQuestionMarkCircle;
 
     protected static ?string $recordTitleAttribute = 'title';
