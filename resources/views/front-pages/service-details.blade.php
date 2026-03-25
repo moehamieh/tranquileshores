@@ -41,7 +41,7 @@
 
                         <!-- Book Consultation Card -->
                         <div class="sidebar-card bg-white shadow-sm" data-aos="fade-right">
-                            <h3 class="sidebar-title serif-font text-center mb-4 italic-serif">Book a Consultation:</h3>
+                            <h3 class="sidebar-title serif-font text-center mb-4 italic-serif">Send A Message:</h3>
                             <form action="#" class="consultation-form">
                                 <div class="mb-3">
                                     <input type="text" class="form-control rounded-pill" placeholder="Your Full Name">
@@ -55,7 +55,7 @@
                                 <div class="row g-2 mb-4">
                                    <textarea class="form-control rounded-pill" placeholder="Your Message" rows="3"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-outline-dark rounded-pill w-100 fw-bold">Book a Visit</button>
+                                <button type="submit" class="btn btn-outline-dark rounded-pill w-100 fw-bold">Send Message</button>
                             </form>
                         </div>
                     </div>

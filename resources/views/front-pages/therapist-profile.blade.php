@@ -76,7 +76,7 @@
                         <div class="mb-4">
                             <textarea class="form-control rounded-pill" placeholder="Your Message" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-outline-dark rounded-pill w-100 fw-bold py-2">Book a Visit</button>
+                        <button type="submit" class="btn btn-outline-dark rounded-pill w-100 fw-bold py-2">Send Message</button>
                     </form>
                 </div>
             </div>
