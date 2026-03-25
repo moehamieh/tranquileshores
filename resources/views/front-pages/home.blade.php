@@ -37,7 +37,9 @@
 
                         <div class="hero-tags-container d-flex flex-wrap gap-2" style="padding-top: 2em">
                             @foreach($services as $service)
+                                <a href="{{ route('service-details', $service->slug) }}" class="hero-tag-link">
                                 <span class="hero-tag"><img src="{{asset('front/images/star.png')}}" class="tag-icon me-1" alt="Star"> {{ $service->title }}</span>
+                                </a>
                             @endforeach
                         </div>
                     </div>
