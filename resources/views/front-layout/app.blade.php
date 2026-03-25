@@ -127,7 +127,7 @@
     @yield('content')
 </main>
 
-<footer class="footer-integrated" style="margin:20px">
+<footer class="footer-integrated" style="margin:10px">
     <div class="container container-lg" >
         <div class="row align-items-start mb-5 g-5">
 
@@ -144,12 +144,11 @@
             </div>
         </div>
 
-        <hr style="border-color: rgba(255,255,255,0.1); margin: 60px 0;">
 
         <div class="row text-start">
 
             <div class="col-md-3">
-                <div class="footer-brand d-flex align-items-center">
+                <div class="footer-brand d-flex align-items-center" >
                     <i class="brand-heart bi bi-heart"></i> OnlineTherapy
                 </div>
                 <p class="brand-p">Start your path to psychological wellness with our specialists.</p>
