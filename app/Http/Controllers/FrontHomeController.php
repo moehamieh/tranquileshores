@@ -63,4 +63,16 @@ class FrontHomeController extends Controller
         $related_posts = Post::published()->where('category_id', $post->category_id)->where('id', '!=', $post->id)->limit(3)->get();
         return view('front-pages.blog-details', compact('post', 'categories', 'related_posts'));
     }
+
+    public function alltherapists()
+    {
+        $therapists = Therapist::published()->get();
+        return view('front-pages.alltherapists', compact('therapists'));
+    }
+
+    public function allservices()
+    {
+        $services = Service::published()->orderBy('order')->get();
+        return view('front-pages.allservices', compact('services'));
+    }
 }

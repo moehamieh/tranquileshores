@@ -30,7 +30,7 @@
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link {{ request()->routeIs('home-page') ? 'active' : '' }}" href="{{ route('home-page') }}">Home</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle {{ request()->routeIs('allservices') || request()->routeIs('service-details') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
                     <div class="dropdown-menu border-0 shadow-sm dropdown-mega">
@@ -38,6 +38,8 @@
                             <div class="mega-menu-image d-none d-lg-block"></div>
                             <div class="mega-menu-links">
                                 <ul class="list-unstyled mb-0">
+                                    <li><a class="dropdown-item fw-bold" href="{{ route('allservices') }}">All Services</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     @foreach($nav_services as $nav_service)
                                         <li><a class="dropdown-item" href="{{ route('service-details', $nav_service->slug) }}">{{ $nav_service->title }}</a></li>
                                     @endforeach
@@ -47,10 +49,12 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle {{ request()->routeIs('alltherapists') || request()->routeIs('therapist-profile') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Therapists
                     </a>
                     <ul class="dropdown-menu border-0 shadow-sm">
+                        <li><a class="dropdown-item" href="{{ route('alltherapists') }}">All Therapists</a></li>
+                        <li><hr class="dropdown-divider"></li>
                         @foreach($nav_therapists as $nav_therapist)
                             <li><a class="dropdown-item" href="{{ route('therapist-profile', $nav_therapist->slug) }}">{{ $nav_therapist->name }}</a></li>
                         @endforeach
@@ -80,11 +84,12 @@
         <ul class="navbar-nav flex-grow-1">
             <li class="nav-item"><a class="drawer-link active" href="#">Home</a></li>
             <li class="nav-item dropdown">
-                <a class="drawer-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="drawer-link dropdown-toggle {{ request()->routeIs('allservices') || request()->routeIs('service-details') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                 </a>
                 <div class="dropdown-menu border-0 shadow-sm bg-transparent">
                     <ul class="list-unstyled mb-0">
+                        <li><a class="dropdown-item text-white fw-bold" href="{{ route('allservices') }}">All Services</a></li>
                         @foreach($nav_services as $nav_service)
                             <li><a class="dropdown-item text-white" href="{{ route('service-details', $nav_service->slug) }}">{{ $nav_service->title }}</a></li>
                         @endforeach
@@ -92,11 +97,12 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="drawer-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="drawer-link dropdown-toggle {{ request()->routeIs('alltherapists') || request()->routeIs('therapist-profile') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Therapists
                 </a>
                 <div class="dropdown-menu border-0 shadow-sm bg-transparent">
                     <ul class="list-unstyled mb-0">
+                        <li><a class="dropdown-item text-white" href="{{ route('alltherapists') }}">All Therapists</a></li>
                         @foreach($nav_therapists as $nav_therapist)
                             <li><a class="dropdown-item text-white" href="{{ route('therapist-profile', $nav_therapist->slug) }}">{{ $nav_therapist->name }}</a></li>
                         @endforeach
@@ -172,12 +178,11 @@
             <div class="col-md-3">
                 <h5 class="footer-section-title">Pages</h5>
                 <ul class="footer-list">
-                    <li>About Us</li>
-                    <li>Our Services</li>
-                    <li>Blog</li>
-                    <li>Contacts</li>
-                    <li>Shop</li>
-                    <li>Image Credits</li>
+                    <li><a href="{{ route('home-page') }}" class="text-white text-decoration-none opacity-75">Home</a></li>
+                    <li><a href="{{ route('allservices') }}" class="text-white text-decoration-none opacity-75">Our Services</a></li>
+                    <li><a href="{{ route('alltherapists') }}" class="text-white text-decoration-none opacity-75">Our Therapists</a></li>
+                    <li><a href="{{ route('blogs') }}" class="text-white text-decoration-none opacity-75">Blog</a></li>
+                    <li><a href="{{ route('contact-us') }}" class="text-white text-decoration-none opacity-75">Contacts</a></li>
                 </ul>
             </div>
         </div>
