@@ -23,7 +23,7 @@
                         </div>
 
                         <div class="d-flex gap-3 mb-5 flex-wrap hero-btn-group"  style="padding-top: 15px">
-                            <button class="btn-book">
+                            <button class="btn-book" onclick="window.location.href='{{route('alltherapists')}}'">
                                 <span class="btn-text" style="font-weight: bold; font-size: 16px">Book a Session</span>
                                 <span class="btn-arrow">&rarr;</span>
                             </button>
@@ -87,7 +87,7 @@
                         <img src="{{asset('front/images/80-home-2.webp')}}" alt="Online therapy session" class="w-100">
                         <div class="danger-card">
                             <h5 class="serif mb-2">Are You in Danger?</h5>
-                            <p class="small mb-3" style="opacity: 0.9;">Call 988 or use this service to get immediate help.</p>
+                            <p class="small mb-3" style="opacity: 0.9;">Call 911 or use this service to get immediate help.</p>
                             <button class="btn-request">Request a Call <i class="bi bi-arrow-right"></i></button>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
             </div>
             <div class="row" style="text-align: center; margin-top: 20px;">
                 <div class="col-lg-12">
-                    <button class="btn-book">
+                    <button class="btn-book" onclick="window.location.href='{{route('alltherapists')}}'">
                         <span class="btn-text" style="font-weight: bold; font-size: 16px">Book a Session</span>
                         <span class="btn-arrow">&rarr;</span>
                     </button>
@@ -121,7 +121,7 @@
                         <div class="hero-text-group promo-text-box">
                             <h4 class="welcome-label mb-4">Welcome to Online Therapy</h4>
                             <h2 class="hero-title mb-4">Online Therapy provides professional psychological support through secure and accessible online sessions.</h2>
-                            <button class="btn-book-promo">
+                            <button class="btn-book-promo" onclick="window.location.href='{{route('alltherapists')}}'">
                                 <span class="btn-text">Book your session</span>
                                 <span class="btn-arrow">&rarr;</span>
                             </button>
@@ -197,7 +197,7 @@
                                     <li><i class="bi bi-check2"></i> {{ $feature }}</li>
                                 @endforeach
                             </ul>
-                            <button class="btn-plan-link mt-4">Book Now <i class="bi bi-arrow-right"></i></button>
+                            <button class="btn-plan-link mt-4" onclick="window.location.href='{{route('alltherapists')}}'">Book Now <i class="bi bi-arrow-right"></i></button>
                         </div>
                     </div>
                 @endforeach
@@ -247,7 +247,7 @@
 
             <div class="row justify-content-center mt-5" data-aos="fade-up">
                 <div class="col-auto">
-                    <a href="#" class="btn-book-teal">
+                    <a href="{{route('alltherapists')}}" class="btn-book-teal">
                         <span class="btn-text">Book a Session</span>
                         <span class="btn-arrow">&rarr;</span>
                     </a>

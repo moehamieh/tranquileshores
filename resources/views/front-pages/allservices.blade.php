@@ -33,7 +33,7 @@
                         <div class="hero-text-group promo-text-box">
                             <h4 class="welcome-label mb-4">Welcome to Online Therapy</h4>
                             <h2 class="hero-title mb-4">Online Therapy provides professional psychological support through secure and accessible online sessions.</h2>
-                            <button class="btn-book-promo">
+                            <button class="btn-book-promo" onclick="window.location.href='{{route('alltherapists')}}'">
                                 <span class="btn-text">Book your session</span>
                                 <span class="btn-arrow">&rarr;</span>
                             </button>

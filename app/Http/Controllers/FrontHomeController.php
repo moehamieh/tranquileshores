@@ -42,7 +42,8 @@ class FrontHomeController extends Controller
     public function contact_us()
     {
         $services = Service::published()->get();
-        return view('front-pages.contact-us', compact('services'));
+        $therapists = Therapist::published()->get();
+        return view('front-pages.contact-us', compact('services', 'therapists'));
     }
 
     public function blogs_index(Request $request)

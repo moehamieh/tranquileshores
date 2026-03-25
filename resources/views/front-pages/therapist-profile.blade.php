@@ -40,7 +40,8 @@
                                 <a href="{{ $social['url'] }}" class="social-icon rounded-circle bg-white shadow-sm d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; color: #333;"><i class="bi {{ $icon }}"></i></a>
                             @endforeach
                         </div>
-                        <a href="{{$therapist->booking_url}}" class="btn-book-teal" target="_blank">                            <span class="btn-text" style="font-weight: bold; font-size: 16px;padding: 0.8em">Book a Session</span>
+                        <a href="{{$therapist->booking_url}}" class="btn-book-teal" target="_blank">
+                            <span class="btn-text" style="font-weight: bold; font-size: 16px;padding: 0.8em">Book a Session</span>
                             <span class="btn-arrow">&rarr;</span>
                         </a>
                     </div>
