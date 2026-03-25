@@ -153,7 +153,7 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <a href="#" class="view-all-link text-dark fw-bold">View All Doctors <span>&rarr;</span></a>
+                            <a href="{{route('alltherapists')}}" class="view-all-link text-dark fw-bold">View All Doctors <span>&rarr;</span></a>
                         </div>
                     </div>
                 </div>
