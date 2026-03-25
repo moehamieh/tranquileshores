@@ -14,7 +14,7 @@
                     <div class="service-intro-content">
                         <h2 class="service-intro-title serif-font mb-4">{{ $service->title }}</h2>
                         <div class="service-intro-text mb-4">
-                            {!! $service->description !!}
+                            {!! $service->subtitle !!}
                         </div>
                     </div>
                 </div>

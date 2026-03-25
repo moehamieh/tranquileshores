@@ -21,7 +21,9 @@ class TherapistsTable
                     ->searchable(),
                 TextColumn::make('role')
                     ->searchable(),
-                ImageColumn::make('image'),
+                ImageColumn::make('image')
+                    ->square()
+                    ->imageHeight(50),
                 TextColumn::make('phone')
                     ->searchable(),
                 TextColumn::make('office_phone')
