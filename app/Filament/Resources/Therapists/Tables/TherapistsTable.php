@@ -22,6 +22,7 @@ class TherapistsTable
                 TextColumn::make('role')
                     ->searchable(),
                 ImageColumn::make('image')
+                    ->disk('public')
                     ->square()
                     ->imageHeight(50),
                 TextColumn::make('phone')

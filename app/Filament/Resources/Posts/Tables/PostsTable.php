@@ -19,7 +19,10 @@ class PostsTable
             ->columns([
                 TextColumn::make('title')
                     ->searchable(),
-                ImageColumn::make('main_image'),
+                ImageColumn::make('main_image')
+                    ->disk('public')
+                    ->square()
+                    ->imageHeight(50),
                 TextColumn::make('author.name')
                     ->sortable(),
                 TextColumn::make('category.name')

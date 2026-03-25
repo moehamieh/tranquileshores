@@ -7,7 +7,6 @@ use App\Models\HowItWorks;
 use App\Models\Post;
 use App\Models\PricingPlan;
 use App\Models\Service;
-use App\Models\ServiceAccordion;
 use App\Models\Slider;
 use App\Models\Therapist;
 use App\Models\User;
@@ -86,24 +85,10 @@ class DatabaseSeeder extends Seeder
             'subtitle' => 'Flexible, private sessions from home.',
             'description' => 'Personalized support for your mental health journey via secure video calls.',
             'image' => 'front/images/80-service-1.webp',
-            'icon' => 'front/images/80-service-1.webp',
             'category_id' => $catServIndiv->id,
             'status' => PublishStatus::Published,
             'order' => 1,
             'bg_color' => '#FAEEB5'
-        ]);
-
-        ServiceAccordion::create([
-            'service_id' => $s1->id,
-            'title' => 'Personal Attention',
-            'content' => 'We focus on your specific needs with one-on-one sessions tailored to your goals.',
-            'order' => 1
-        ]);
-        ServiceAccordion::create([
-            'service_id' => $s1->id,
-            'title' => 'Qualified Specialists',
-            'content' => 'Our team consists of licensed professionals with diverse backgrounds and specialties.',
-            'order' => 2
         ]);
 
         Service::create([
@@ -112,7 +97,6 @@ class DatabaseSeeder extends Seeder
             'subtitle' => 'Nature-based healing in motion.',
             'description' => 'Experience therapy while walking in local parks for a unique perspective.',
             'image' => 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800',
-            'icon' => 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800',
             'category_id' => $catServIndiv->id,
             'status' => PublishStatus::Published,
             'order' => 2,
@@ -125,7 +109,6 @@ class DatabaseSeeder extends Seeder
             'subtitle' => 'Strengthen your bond together.',
             'description' => 'Navigate relationship challenges with professional guidance.',
             'image' => 'https://images.unsplash.com/photo-1516589174184-c68d196f4544?auto=format&fit=crop&w=800',
-            'icon' => 'https://images.unsplash.com/photo-1516589174184-c68d196f4544?auto=format&fit=crop&w=800',
             'category_id' => $catServIndiv->id,
             'status' => PublishStatus::Published,
             'order' => 3,
@@ -138,7 +121,6 @@ class DatabaseSeeder extends Seeder
             'subtitle' => 'Support for the younger generation.',
             'description' => 'Helping adolescents manage stress, school, and identity.',
             'image' => 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800',
-            'icon' => 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800',
             'category_id' => $catServIndiv->id,
             'status' => PublishStatus::Published,
             'order' => 4,
