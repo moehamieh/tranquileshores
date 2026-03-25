@@ -27,7 +27,7 @@
                                 <span class="btn-text" style="font-weight: bold; font-size: 16px">Book a Session</span>
                                 <span class="btn-arrow">&rarr;</span>
                             </button>
-                            <button class="btn-how" style="font-size: 16px">Learn How It Works &rarr;</button>
+                            <button class="btn-how" style="font-size: 16px" onclick="window.location.href='{{route('home-page')}}#howitwork'">Learn How It Works &rarr;</button>
                         </div>
 
                         <!-- Mobile image added for mobile layout -->
@@ -76,7 +76,7 @@
     </section>
 
 
-    <section class="section-works section-padding" data-aos="fade-up">
+    <section class="section-works section-padding" data-aos="fade-up" id="howitwork">
         <div class="container container-lg">
             <h2 class="display-4 serif mb-3">How <span class="italic-serif text-teal">Online Therapy</span> Works</h2>
             <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto">Compassionate therapy for every stage of life.</p>
