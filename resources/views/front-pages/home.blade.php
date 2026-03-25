@@ -301,7 +301,7 @@
                                     </div>
 
                                     <div class="col-12 mt-4">
-                                        <button type="submit" class="contact-us-section-btn">Book an Appointment</button>
+                                        <button type="submit" class="contact-us-section-btn">Send Message</button>
                                     </div>
                                 </div>
                             </form>
