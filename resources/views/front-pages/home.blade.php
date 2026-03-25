@@ -59,7 +59,7 @@
             <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto">Compassionate therapy for every stage of life.</p>
 
             <div class="row g-4">
-                @foreach($services as $service)
+                @foreach($services->take(4) as $service)
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="therapy-card shadow-sm" style="background-color: {{ $service->bg_color ?? '#ffffff' }}">
                             <img src="{{ asset($service->image_url ?? 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600') }}" class="card-img-top" alt="{{ $service->title }}">
