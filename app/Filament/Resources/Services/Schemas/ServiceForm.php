@@ -19,7 +19,7 @@ class ServiceForm
                     ->required(),
                 TextInput::make('subtitle'),
                 FileUpload::make('image')
-                    ->label('Image 600*400')
+                    ->label('Image 1024 * 710')
                     ->image()
                     ->disk('public')
                     ->directory('services')

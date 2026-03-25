@@ -23,6 +23,7 @@ class TherapistForm
                     ->required(),
                 FileUpload::make('image')
                     ->disk('public')
+                    ->label('Image 1024 * 710')
                     ->image()
                     ->directory('therapists')
                     ->visibility('public'),

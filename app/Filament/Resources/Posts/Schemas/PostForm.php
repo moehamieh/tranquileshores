@@ -28,7 +28,7 @@ class PostForm
                     ->directory('blog')
                     ->visibility('public')
                     ->required(),
-                FileUpload::make('additional_images 390 * 530')
+                FileUpload::make('additional_images 800 * 530')
                     ->label('Additional Images')
                     ->image()
                     ->disk('public')

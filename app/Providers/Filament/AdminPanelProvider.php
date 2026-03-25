@@ -34,7 +34,7 @@ class AdminPanelProvider extends PanelProvider
                     'gray' => Color::Slate
 
             ])
-            ->brandName('Tranquileshores')
+            ->brandName('Tranquilshores')
             // ->brandLogo(asset('images/logo.svg'))
             ->brandLogoHeight('3rem')
 
