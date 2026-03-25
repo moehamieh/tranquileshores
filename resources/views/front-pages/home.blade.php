@@ -59,7 +59,7 @@
             <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto">Compassionate therapy for every stage of life.</p>
 
             <div class="row g-4">
-                @foreach($services->take(4) as $service)
+                @foreach($services->take(6) as $service)
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="therapy-card shadow-sm" style="background-color: {{ $service->bg_color ?? '#ffffff' }}">
                             <img src="{{ asset($service->image_url ?? 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600') }}" class="card-img-top" alt="{{ $service->title }}">
@@ -143,8 +143,8 @@
                         <div class="therapist-card shadow-sm h-100 d-flex flex-column">
                             <div class="therapist-image-wrapper">
                                 <img src="{{ asset($therapist->image_url) }}" alt="{{ $therapist->name }}">
-                                <span class="badge-price">from ${{ number_format($therapist->min_price, 0) }}/h</span>
-                                <span class="badge-availability">Available this week</span>
+{{--                                <span class="badge-price">from ${{ number_format($therapist->min_price, 0) }}/h</span>--}}
+{{--                                <span class="badge-availability">Available this week</span>--}}
                                 <div class="therapist-tags">
                                     @foreach($therapist->tags ?? [] as $tag)
                                         <span class="tag-item">{{ $tag }}</span>
