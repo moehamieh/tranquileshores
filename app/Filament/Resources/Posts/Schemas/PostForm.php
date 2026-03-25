@@ -28,8 +28,8 @@ class PostForm
                     ->directory('blog')
                     ->visibility('public')
                     ->required(),
-                FileUpload::make('additional_images 800 * 530')
-                    ->label('Additional Images')
+                FileUpload::make('additional_images')
+                    ->label('Additional Images 800 * 530')
                     ->image()
                     ->disk('public')
                     ->directory('blog')
@@ -49,7 +49,7 @@ class PostForm
                     ->required(),
                 Select::make('category_id')
                     ->label('Category')
-                    ->relationship('category', 'name')
+                    ->relationship('category', 'name', fn($query) => $query->where('type', 'blog'))
                     ->searchable()
                     ->preload()
                     ->required(),

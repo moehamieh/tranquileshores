@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <h3 class="blog-card-title">{{ $post->title }}</h3>
-                                    <p class="text-muted small mb-3">{{ $post->summary }}</p>
+                                    <p class="text-muted small mb-3">{!!  $post->summary !!}</p>
                                     <a href="{{ route('blog-details', $post->slug) }}" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
                                 </div>
                             </div>

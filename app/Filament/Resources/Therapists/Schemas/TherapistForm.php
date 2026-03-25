@@ -51,11 +51,6 @@ class TherapistForm
                     ->required()
                     ->numeric()
                     ->default(0),
-                TextInput::make('min_price')
-                    ->required()
-                    ->numeric()
-                    ->default(0.0)
-                    ->prefix('$'),
                 Repeater::make('social_links')
                     ->schema([
                         Select::make('platform')

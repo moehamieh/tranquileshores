@@ -143,8 +143,7 @@
                         <div class="therapist-card shadow-sm h-100 d-flex flex-column">
                             <div class="therapist-image-wrapper">
                                 <img src="{{ asset($therapist->image_url) }}" alt="{{ $therapist->name }}">
-{{--                                <span class="badge-price">from ${{ number_format($therapist->min_price, 0) }}/h</span>--}}
-{{--                                <span class="badge-availability">Available this week</span>--}}
+
                                 <div class="therapist-tags">
                                     @foreach($therapist->tags ?? [] as $tag)
                                         <span class="tag-item">{{ $tag }}</span>

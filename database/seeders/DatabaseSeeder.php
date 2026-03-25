@@ -53,7 +53,6 @@ class DatabaseSeeder extends Seeder
             'certification' => 'Board Certified Psychologist',
             'expertise' => 'Anxiety, Depression, Trauma-informed care',
             'practice_years' => 15,
-            'min_price' => 130,
             'social_links' => [
                 ['platform' => 'Instagram', 'url' => '#', 'icon' => 'bi-instagram'],
                 ['platform' => 'LinkedIn', 'url' => '#', 'icon' => 'bi-linkedin']
@@ -75,7 +74,6 @@ class DatabaseSeeder extends Seeder
             'certification' => 'LCSW',
             'expertise' => 'Teen Therapy, Family Counseling',
             'practice_years' => 8,
-            'min_price' => 120,
             'social_links' => [['platform' => 'LinkedIn', 'url' => '#', 'icon' => 'bi-linkedin']],
             'tags' => ['Teenagers', 'Family', 'ADHD'],
             'status' => PublishStatus::Published

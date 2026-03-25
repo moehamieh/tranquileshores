@@ -38,9 +38,6 @@ class TherapistsTable
                 TextColumn::make('practice_years')
                     ->numeric()
                     ->sortable(),
-                TextColumn::make('min_price')
-                    ->money()
-                    ->sortable(),
                 TextColumn::make('status')
                     ->badge(),
                 TextColumn::make('created_at')
