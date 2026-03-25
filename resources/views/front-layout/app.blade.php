@@ -84,7 +84,7 @@
             <i class="bi bi-heart-fill me-1" style="color: #FDF9F6;"></i> OnlineTherapy
         </div>
         <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item"><a class="drawer-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="drawer-link active" href="{{route('home-page')}}">Home</a></li>
             <li class="nav-item dropdown">
                 <a class="drawer-link dropdown-toggle {{ request()->routeIs('allservices') || request()->routeIs('service-details') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
