@@ -37,6 +37,10 @@ class TherapistForm
                         TextInput::make('email')
                             ->label('Email address')
                             ->email(),
+                        TextInput::make('booking_url')
+                            ->label('Booking URL')
+                            ->url()
+                            ->columnSpanFull(),
                         RichEditor::make('bio')
                             ->columnSpanFull(),
                         Select::make('status')

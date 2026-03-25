@@ -156,6 +156,13 @@
 
                                 <a href="{{ route('therapist-profile', $therapist->slug) }}" class="view-profile">VIEW PROFILE <i class="bi bi-arrow-right"></i></a>
                             </div>
+                            <div class="row  mb-2" data-aos="fade-up">
+                                <div class="col-auto">
+                                    <a href="{{$therapist->booking_url}}" class="btn-book-teal" target="_blank">
+                                        <span class="btn-text">Book with {{$therapist->name}}</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 @endforeach

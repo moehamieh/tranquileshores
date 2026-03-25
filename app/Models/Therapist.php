@@ -10,7 +10,7 @@ class Therapist extends Model
     protected $fillable = [
         'name', 'slug', 'role', 'image', 'phone', 'office_phone', 'email', 'bio',
         'education', 'certification', 'expertise', 'practice_years',
-        'social_links', 'tags', 'status'
+        'social_links', 'tags', 'status', 'booking_url'
     ];
 
     protected static function booted()
