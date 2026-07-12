@@ -49,13 +49,14 @@ class ServiceForm
                     ->default(0),
                 Select::make('bg_color')
                     ->options([
-                        '#FBF7F4' => 'Beige (#FBF7F4)',
-                        '#FAEEB5' => 'Yellow (#FAEEB5)',
-                        '#B5C8B8' => 'Green (#B5C8B8)',
-                        '#F8DAD2' => 'Pink (#F8DAD2)',
-                        '#FFFFFF' => 'White (#FFFFFF)',
+                        '#F4F4EF' => 'Warm White',
+                        '#9A9A83' => 'Olive Green',
+                        '#EFA18A' => 'Sunset',
+                        '#264C6B' => 'Ocean Blue',
+                        '#CFCFE1' => 'Lavender',
+                        '#6565A9' => 'Purple',
                     ])
-                    ->default('#FBF7F4')
+                    ->default('#F4F4EF')
                     ->required(),
                 Select::make('status')
                     ->options(PublishStatus::class)

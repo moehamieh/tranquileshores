@@ -54,6 +54,29 @@
         </div>
     </div>
 
+    <!-- Section: Intro / Brand Message -->
+    <section class="section-intro section-padding" data-aos="fade-up">
+        <div class="container container-lg">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <span class="badge-who mb-3">Welcome to Tranquil Shores</span>
+                    <h2 class="section-title mb-4">Life can feel heavy sometimes. You may be carrying anxiety, grief, relationship pain, trauma, burnout, or simply the quiet exhaustion of trying to hold everything together.</h2>
+
+                    <div class="intro-body-text">
+                        <p class="lead mb-4 fw-bold text-teal">At Tranquil Shores, you do not have to navigate it alone.</p>
+
+                        <p class="mb-4">We are a psychotherapy practice rooted in compassion, trust, and real human connection. Our approach is warm, grounded, and personalized because healing is never one-size-fits-all. We meet you where you are, move at your pace, and help you find your way toward greater calm, clarity, and emotional strength.</p>
+
+                        <div class="intro-footer-message mt-5 p-4 rounded-4 shadow-sm" style="background-color: var(--warm-white-100); border: 1px italic var(--olive-200);">
+                            <h4 class="serif italic mb-0 text-teal">This is more than a therapy clinic.</h4>
+                            <p class="h5 mt-2 mb-0">It is a space to pause. A space to exhale. A space to begin again.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="section-who section-padding" data-aos="fade-up">
         <div class="container container-lg">
             <span class="badge-who">Our Services</span>
@@ -63,7 +86,7 @@
             <div class="row g-4">
                 @foreach($services->take(4) as $service)
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="therapy-card shadow-sm" style="background-color: {{ $service->bg_color ?? '#ffffff' }}">
+                        <div class="therapy-card shadow-sm" style="background-color: {{ $service->bg_color ?? '#F4F4EF' }}">
                             <img src="{{ asset($service->image_url ?? 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600') }}" class="card-img-top" alt="{{ $service->title }}">
                             <div class="card-body-custom">
                                 <h3 class="card-title-custom">{{ $service->title }}</h3>

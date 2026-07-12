@@ -12,14 +12,14 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/style_new.css')}}">
 
 <body>
 
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid px-lg-5">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <i class="bi bi-heart-fill me-2" style="font-size: 1.3rem; color: #5C9396;"></i> OnlineTherapy
+<img src="{{asset('front/images/logo.png')}}" alt="Logo" >
         </a>
 
         <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
@@ -81,7 +81,7 @@
     </div>
     <div class="offcanvas-body d-flex flex-column">
         <div class="drawer-brand mb-5">
-            <i class="bi bi-heart-fill me-1" style="color: #FDF9F6;"></i> OnlineTherapy
+<img src="{{asset('front/images/logo-white.png')}}" alt="Logo" >
         </div>
         <ul class="navbar-nav flex-grow-1">
             <li class="nav-item"><a class="drawer-link active" href="{{route('home-page')}}">Home</a></li>
@@ -149,8 +149,7 @@
 
             <div class="col-md-3">
                 <div class="footer-brand d-flex align-items-center" >
-                    <i class="brand-heart bi bi-heart"></i> OnlineTherapy
-                </div>
+<img src="{{asset('front/images/logo-white.png')}}" alt="Logo" >                </div>
                 <p class="brand-p">Start your path to psychological wellness with our specialists.</p>
                 <div class="footer-social-float d-flex align-items-center gap-3">
                     <div class="d-flex gap-2">

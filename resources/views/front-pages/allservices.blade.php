@@ -11,7 +11,7 @@
             <div class="row g-4">
                 @foreach($services as $service)
                     <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="therapy-card shadow-sm" style="background-color: {{ $service->bg_color ?? '#ffffff' }}">
+                        <div class="therapy-card shadow-sm" style="background-color: {{ $service->bg_color ?? '#F4F4EF' }}">
                             <img src="{{ asset($service->image_url ?? 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600') }}" class="card-img-top" alt="{{ $service->title }}">
                             <div class="card-body-custom">
                                 <h3 class="card-title-custom">{{ $service->title }}</h3>
