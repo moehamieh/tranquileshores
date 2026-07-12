@@ -81,9 +81,17 @@
 
     <section class="section-who section-padding" data-aos="fade-up">
         <div class="container container-lg">
-            <span class="badge-who">Our Services</span>
-            <h2 class="section-title">Support Tailored <span>to Your Needs</span></h2>
-            <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto">Compassionate therapy for every stage of life.</p>
+            <h3 class="section-title"> At Tranquil Shores, you do not have to navigate it alone.
+</h3>
+            <h2 class="section-title"><span >This is more than a therapy clinic </span>
+                <p>
+                    <div style="padding-top: 5px ;font-size: 0.5em;">
+It is a space to pause. A space to exhale. A space to begin again.</div>
+                </p>
+</h2>
+            <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto" style="padding-top: 10px;" >
+                 <span class="badge-who mb-3" style="font-size: 1.5em;">EXPLORE OUR SERVICES</span>
+            </p>
 
             <div class="row g-4">
                 @foreach($services->take(4) as $service)
