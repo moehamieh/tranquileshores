@@ -65,7 +65,7 @@
             </ul>
             <div class="d-flex align-items-center gap-3">
                 <div class="cta-btn-group">
-                    <a href="{{route('alltherapists')}}" class="btn-book-teal" target="_blank">
+                    <a href="{{route('alltherapists')}}" class="btn-book-teal" >
                         <span class="btn-text" style="font-weight: bold; font-size: 16px;padding: 0.8em">Book a Session</span>
                         <span class="btn-arrow">&rarr;</span>
                     </a>
@@ -115,7 +115,7 @@
             <li class="nav-item"><a class="drawer-link" href="{{route('contact-us')}}">Contact</a></li>
         </ul>
         <div class="drawer-footer mt-auto">
-            <a href="{{route('alltherapists')}}" class="btn-book-promo" target="_blank">
+            <a href="{{route('alltherapists')}}" class="btn-book-promo" >
                 <span class="btn-text" style="font-weight: bold; font-size: 16px;padding: 0.8em">Book a Session</span>
                 <span class="btn-arrow">&rarr;</span>
             </a>

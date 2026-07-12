@@ -25,6 +25,35 @@
         </div>
     </section>
 
+    <section class="areas-of-concern section-padding" data-aos="fade-up">
+        <div class="container container-lg">
+            <h2 class="section-title mb-4">Areas of Concern We Support</h2>
+            <p class="text-muted mb-4">You do not need to know which type of therapy you need before reaching out. We can help you explore the right starting point.</p>
+            <p class="fw-bold mb-3">Our areas of support include:</p>
+            <p class="mb-5 text-muted">
+                Trauma and PTSD · Complex trauma · Attachment wounds · Anxiety · Depression · Grief and loss · Burnout · OCD · Borderline personality disorder · Dissociation · Anger · Self-esteem · Co-dependency · People-pleasing · Intimate partner violence · Domestic abuse · Disordered eating · LGBTQ+ concerns · Gender dysphoria · Relationship difficulties · Life transitions · Sport and performance-related stress
+            </p>
+
+            <h2 class="section-title mb-4">Our Therapeutic Approaches</h2>
+            <p class="text-muted mb-4">Therapy is personalized rather than limited to one method. Depending on your needs, your therapist may draw from:</p>
+            <ul class="mb-4 text-muted">
+                <li>Trauma-Informed Stabilization Treatment</li>
+                <li>Eye Movement Desensitization and Reprocessing</li>
+                <li>Internal Family Systems-informed parts work</li>
+                <li>Emotionally Focused Couples Therapy</li>
+                <li>Attachment-based therapy</li>
+                <li>Psychoeducation</li>
+                <li>Mindfulness and nervous-system regulation</li>
+                <li>Polyvagal-informed exercises</li>
+            </ul>
+            <p class="mb-5 text-muted">You do not have to understand these approaches before beginning. Your therapist will explain what may be helpful, answer your questions, and ensure that therapy moves at a pace that feels safe and collaborative.</p>
+
+            <h2 class="section-title mb-4">Not Sure Where to Begin?</h2>
+            <p class="mb-4">You do not need to have everything figured out before reaching out. We can help you understand your options and find the support that feels right for you.</p>
+            <a href="{{ route('contact-us') }}" class="btn-book-teal">Book a Consultation &rarr;</a>
+        </div>
+    </section>
+
     <div class="promo-section" data-aos="fade-up">
         <div class="promo-card position-relative">
             <div class="container-fluid px-lg-0">

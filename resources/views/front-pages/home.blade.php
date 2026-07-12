@@ -59,11 +59,13 @@
         <div class="container container-lg">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-10">
-                    <span class="badge-who mb-3">Welcome to Tranquil Shores</span>
+                    <span class="badge-who mb-3">
+                                                <p class="lead mb-4 fw-bold text-teal">At Tranquil Shores, you do not have to navigate it alone.</p>
+
+                    </span>
                     <h2 class="section-title mb-4">Life can feel heavy sometimes. You may be carrying anxiety, grief, relationship pain, trauma, burnout, or simply the quiet exhaustion of trying to hold everything together.</h2>
 
                     <div class="intro-body-text">
-                        <p class="lead mb-4 fw-bold text-teal">At Tranquil Shores, you do not have to navigate it alone.</p>
 
                         <p class="mb-4">We are a psychotherapy practice rooted in compassion, trust, and real human connection. Our approach is warm, grounded, and personalized because healing is never one-size-fits-all. We meet you where you are, move at your pace, and help you find your way toward greater calm, clarity, and emotional strength.</p>
 
@@ -121,7 +123,7 @@
                     @foreach($how_it_works as $step)
                         <div class="step-card shadow-sm">
                             <div class="step-number">{{ $step->step_number }}</div>
-                            <div class="step-content"><h4>{{ $step->title }} &rarr;</h4><p>{{ $step->description }}</p></div>
+                            <div class="step-content"><h4>{{ $step->title }} &rarr;</h4>{{ $step->description }}</div>
                         </div>
                     @endforeach
                 </div>
