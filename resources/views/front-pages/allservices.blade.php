@@ -25,32 +25,61 @@
         </div>
     </section>
 
-    <section class="areas-of-concern section-padding" data-aos="fade-up">
+    <section class="section-who section-padding" data-aos="fade-up">
         <div class="container container-lg">
-            <h2 class="section-title mb-4">Areas of Concern We Support</h2>
-            <p class="text-muted mb-4">You do not need to know which type of therapy you need before reaching out. We can help you explore the right starting point.</p>
-            <p class="fw-bold mb-3">Our areas of support include:</p>
-            <p class="mb-5 text-muted">
-                Trauma and PTSD · Complex trauma · Attachment wounds · Anxiety · Depression · Grief and loss · Burnout · OCD · Borderline personality disorder · Dissociation · Anger · Self-esteem · Co-dependency · People-pleasing · Intimate partner violence · Domestic abuse · Disordered eating · LGBTQ+ concerns · Gender dysphoria · Relationship difficulties · Life transitions · Sport and performance-related stress
-            </p>
+            <span class="badge-who">Our Care</span>
+            <h2 class="section-title">Compassionate Support <span>for Your Journey</span></h2>
+            <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto">We provide a wide range of therapeutic support and specialized approaches tailored to your unique needs.</p>
 
-            <h2 class="section-title mb-4">Our Therapeutic Approaches</h2>
-            <p class="text-muted mb-4">Therapy is personalized rather than limited to one method. Depending on your needs, your therapist may draw from:</p>
-            <ul class="mb-4 text-muted">
-                <li>Trauma-Informed Stabilization Treatment</li>
-                <li>Eye Movement Desensitization and Reprocessing</li>
-                <li>Internal Family Systems-informed parts work</li>
-                <li>Emotionally Focused Couples Therapy</li>
-                <li>Attachment-based therapy</li>
-                <li>Psychoeducation</li>
-                <li>Mindfulness and nervous-system regulation</li>
-                <li>Polyvagal-informed exercises</li>
-            </ul>
-            <p class="mb-5 text-muted">You do not have to understand these approaches before beginning. Your therapist will explain what may be helpful, answer your questions, and ensure that therapy moves at a pace that feels safe and collaborative.</p>
+            <div class="row g-5 mt-5 text-start">
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4" style="font-family: 'Lora', serif; color: var(--teal-dark);">Areas of Concern We Support</h3>
+                    <p class="text-muted mb-4">You do not need to know which type of therapy you need before reaching out. We can help you explore the right starting point.</p>
+                    <p class="fw-bold mb-3">Our areas of support include:</p>
+                    <p class="mb-4 text-muted" style="line-height: 1.8;">
+                        Trauma and PTSD · Complex trauma · Attachment wounds · Anxiety · Depression · Grief and loss · Burnout · OCD · Borderline personality disorder · Dissociation · Anger · Self-esteem · Co-dependency · People-pleasing · Intimate partner violence · Domestic abuse · Disordered eating · LGBTQ+ concerns · Gender dysphoria · Relationship difficulties · Life transitions · Sport and performance-related stress
+                    </p>
+                </div>
 
-            <h2 class="section-title mb-4">Not Sure Where to Begin?</h2>
-            <p class="mb-4">You do not need to have everything figured out before reaching out. We can help you understand your options and find the support that feels right for you.</p>
-            <a href="{{ route('contact-us') }}" class="btn-book-teal">Book a Consultation &rarr;</a>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4" style="font-family: 'Lora', serif; color: var(--teal-dark);">Our Therapeutic Approaches</h3>
+                    <p class="text-muted mb-4">Therapy is personalized rather than limited to one method. Depending on your needs, your therapist may draw from:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="text-muted mb-0" style="list-style-type: none; padding-left: 0;">
+                                <li class="mb-2"><i class="bi bi-check2-circle text-teal me-2"></i>Trauma-Informed Stabilization Treatment</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-teal me-2"></i>Eye Movement Desensitization and Reprocessing</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-teal me-2"></i>Internal Family Systems-informed parts work</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-teal me-2"></i>Emotionally Focused Couples Therapy</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="text-muted mb-0" style="list-style-type: none; padding-left: 0;">
+                                <li class="mb-2"><i class="bi bi-check2-circle text-teal me-2"></i>Attachment-based therapy</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-teal me-2"></i>Psychoeducation</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-teal me-2"></i>Mindfulness and nervous-system regulation</li>
+                                <li class="mb-2"><i class="bi bi-check2-circle text-teal me-2"></i>Polyvagal-informed exercises</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-muted small italic">
+                        Your therapist will explain what may be helpful, answer your questions, and ensure that therapy moves at a pace that feels safe and collaborative.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="p-5 rounded-4" style="background-color: var(--warm-white-100); border: 1px dashed var(--olive-300);">
+                        <h3 class="fw-bold mb-3" style="font-family: 'Lora', serif;">Not Sure Where to Begin?</h3>
+                        <p class="mb-4 text-muted mx-auto col-md-8">You do not need to have everything figured out before reaching out. We can help you understand your options and find the support that feels right for you.</p>
+                        <button class="btn-book" onclick="window.location.href='{{route('alltherapists')}}'">
+                            <span class="btn-text" style="font-weight: bold; font-size: 16px">Book a Consultation</span>
+                            <span class="btn-arrow">&rarr;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

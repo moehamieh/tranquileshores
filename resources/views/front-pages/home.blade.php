@@ -81,14 +81,8 @@
 
     <section class="section-who section-padding" data-aos="fade-up">
         <div class="container container-lg">
-            <h3 class="section-title"> At Tranquil Shores, you do not have to navigate it alone.
-</h3>
-            <h2 class="section-title"><span >This is more than a therapy clinic </span>
-                <p>
-                    <div style="padding-top: 5px ;font-size: 0.5em;">
-It is a space to pause. A space to exhale. A space to begin again.</div>
-                </p>
-</h2>
+            <h2 class="display-4 serif mb-3">At Tranquil Shores, you do not have to <span class="italic-serif text-teal">navigate it alone.</span></h2>
+            <p class="text-muted mb-4 col-md-8 mx-auto" style="font-size: 1.25rem;">This is more than a therapy clinic. It is a space to pause. A space to exhale. A space to begin again.</p>
             <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto" style="padding-top: 10px;" >
                  <span class="badge-who mb-3" style="font-size: 1.5em;">EXPLORE OUR SERVICES</span>
             </p>
@@ -170,7 +164,7 @@ It is a space to pause. A space to exhale. A space to begin again.</div>
     <section class="licensed-therapist section-padding" data-aos="fade-up">
         <div class="container container-lg text-center">
             <span class="badge-who mb-3">Our Team</span>
-            <h2 class="section-title mb-5">Meet Our <span>Licensed Therapists</span></h2>
+            <h2 class="display-4 serif mb-5">Meet Our <span class="italic-serif text-teal">Licensed Therapists</span></h2>
 
             <div class="row g-4 text-start">
                 @foreach($therapists as $therapist)
@@ -210,7 +204,7 @@ It is a space to pause. A space to exhale. A space to begin again.</div>
                 <div>
                     <span class="badge-who mb-3">Our Prices</span>
 
-                    <h2 class="section-title mb-2"><span>Flexible</span> Therapy Plans</h2>
+                    <h2 class="display-4 serif mb-2"><span class="italic-serif text-teal">Flexible</span> Therapy Plans</h2>
                     <p class="text-muted">Choose the support that fits your needs and lifestyle.</p>
                 </div>
             </div>
@@ -259,7 +253,7 @@ It is a space to pause. A space to exhale. A space to begin again.</div>
     <section class="our-blogs section-padding" data-aos="fade-up">
         <div class="container container-lg text-center">
             <span class="badge-who mb-3">Our Blog</span>
-            <h2 class="section-title mb-3">Insights & Mental Health <span>Resources</span></h2>
+            <h2 class="display-4 serif mb-3">Insights & Mental Health <span class="italic-serif text-teal">Resources</span></h2>
             <p class="text-muted mb-5">Practical guidance, emotional insights, and support for everyday life.</p>
 
             <div class="row g-4">
