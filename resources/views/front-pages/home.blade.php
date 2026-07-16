@@ -125,7 +125,7 @@
                     @foreach($how_it_works as $step)
                         <div class="step-card shadow-sm">
                             <div class="step-number">{{ $step->step_number }}</div>
-                            <div class="step-content"><h4>{{ $step->title }} &rarr;</h4>{{ $step->description }}</div>
+                            <div class="step-content"><h4>{{ $step->title }} &rarr;</h4>{!! $step->description !!}</div>
                         </div>
                     @endforeach
                 </div>
