@@ -142,7 +142,7 @@
         </div>
     </section> -->
 
-    <div class="promo-section" data-aos="fade-up">
+    <!-- <div class="promo-section" data-aos="fade-up">
         <div class="promo-card position-relative">
             <div class="container-fluid px-lg-0">
                 <div class="row justify-content-start">
@@ -159,7 +159,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <section class="licensed-therapist section-padding" data-aos="fade-up">
         <div class="container container-lg text-center">
