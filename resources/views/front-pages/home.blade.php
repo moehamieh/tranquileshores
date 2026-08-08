@@ -27,7 +27,7 @@
                                 <span class="btn-text" style="font-weight: bold; font-size: 16px">Book a Session</span>
                                 <span class="btn-arrow">&rarr;</span>
                             </button>
-                            <!-- <button class="btn-how" style="font-size: 16px" onclick="window.location.href='{{route('home-page')}}#howitwork'">Learn How It Works &rarr;</button> -->
+                            <button class="btn-how" style="font-size: 16px" onclick="window.location.href='{{route('home-page')}}#howitwork'">Learn How It Works &rarr;</button>
                         </div>
 
                         <!-- Mobile image added for mobile layout -->
@@ -104,7 +104,7 @@
         </div>
     </section>
 
-<!-- 
+
     <section class="section-works section-padding" data-aos="fade-up" id="howitwork">
         <div class="container container-lg">
             <h2 class="display-4 serif mb-3">How <span class="italic-serif text-teal">Online Therapy</span> Works</h2>
@@ -140,9 +140,9 @@
 
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <div class="promo-section" data-aos="fade-up">
+    <!-- <div class="promo-section" data-aos="fade-up">
         <div class="promo-card position-relative">
             <div class="container-fluid px-lg-0">
                 <div class="row justify-content-start">
@@ -159,7 +159,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <section class="licensed-therapist section-padding" data-aos="fade-up">
         <div class="container container-lg text-center">
