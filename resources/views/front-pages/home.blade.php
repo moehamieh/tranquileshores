@@ -94,7 +94,7 @@
                             <img src="{{ asset($service->image_url ?? 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600') }}" class="card-img-top" alt="{{ $service->title }}">
                             <div class="card-body-custom">
                                 <h3 class="card-title-custom">{{ $service->title }}</h3>
-                                <p class="card-text-custom">{{ $service->subtitle ?? $service->description }}</p>
+                                <p class="card-text-custom">{!! $service->subtitle ?? $service->description !!}</p>
                                 <a href="{{ route('service-details', $service->slug) }}" class="btn-learn">Learn More &rarr;</a>
                             </div>
                         </div>
