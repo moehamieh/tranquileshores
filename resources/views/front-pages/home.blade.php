@@ -220,7 +220,7 @@
                                 </div>
                                 <i class="bi {{ $plan->icon }} plan-logo"></i>
                             </div>
-                            <p class="plan-desc">{!! $plan->description !!}</p>
+                            <div class="plan-desc" >{!! $plan->description !!}</div>
                             <ul class="plan-features">
                                 @foreach($plan->features ?? [] as $feature)
                                     <li><i class="bi bi-check2"></i> {{ $feature }}</li>
