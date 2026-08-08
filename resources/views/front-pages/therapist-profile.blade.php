@@ -129,7 +129,7 @@
                         </div>
                     </div> -->
 
-
+@if($therapist->posts && count($therapist->posts) > 0)
                     <div class="articles-section mb-5">
                         <h2 class="section-title serif-font mb-4" style="color: #2C4A4A;">Related Articles</h2>
                         <div class="row g-4">
@@ -149,6 +149,7 @@
                             @endforeach
                         </div>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>
