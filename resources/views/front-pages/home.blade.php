@@ -13,7 +13,7 @@
 <div>
 
     <div class="hero-section" >
-        <div class="hero-card position-relative" style="   background: url('{{asset($slider->image_url)}}') no-repeat center;">
+        <div class="hero-card position-relative" style="background-image: url('{{asset($slider->image_url)}}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
             <div class="container-fluid px-lg-0"  >
                 <div class="row justify-content-start" >
                     <div class="col-lg-6 hero-content-left">
@@ -27,7 +27,7 @@
                                 <span class="btn-text" style="font-weight: bold; font-size: 16px">Book a Session</span>
                                 <span class="btn-arrow">&rarr;</span>
                             </button>
-                            <button class="btn-how" style="font-size: 16px" onclick="window.location.href='{{route('home-page')}}#howitwork'">Learn How It Works &rarr;</button>
+                            <!-- <button class="btn-how" style="font-size: 16px" onclick="window.location.href='{{route('home-page')}}#howitwork'">Learn How It Works &rarr;</button> -->
                         </div>
 
                         <!-- Mobile image added for mobile layout -->
@@ -88,7 +88,7 @@
             </p>
 
             <div class="row g-4">
-                @foreach($services->take(4) as $service)
+                @foreach($services as $service)
                     <div class="col-sm-12 col-md-6 col-lg-3">
                         <div class="therapy-card shadow-sm" style="background-color: {{ $service->bg_color ?? '#F4F4EF' }}">
                             <img src="{{ asset($service->image_url ?? 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600') }}" class="card-img-top" alt="{{ $service->title }}">
@@ -104,7 +104,7 @@
         </div>
     </section>
 
-
+<!-- 
     <section class="section-works section-padding" data-aos="fade-up" id="howitwork">
         <div class="container container-lg">
             <h2 class="display-4 serif mb-3">How <span class="italic-serif text-teal">Online Therapy</span> Works</h2>
@@ -140,7 +140,7 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
     <div class="promo-section" data-aos="fade-up">
         <div class="promo-card position-relative">

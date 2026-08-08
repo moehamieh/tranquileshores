@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid px-lg-5">
         <a class="navbar-brand d-flex align-items-center" href="#">
-<img src="{{asset('front/images/logo.png')}}" alt="Logo" >
+<img src="{{asset('front/images/logo.png')}}" alt="Logo" width="200">
         </a>
 
         <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">

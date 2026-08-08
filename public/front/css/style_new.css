@@ -70,7 +70,7 @@
 .custom-accordion .accordion-button {
     padding: 20px 25px;
     box-shadow: none;
-    font-family: 'Lora', serif;
+    font-family: 'Beautique Display', serif;
     font-size: 1.25rem;
     font-weight: 600;
     background-color: transparent !important;
@@ -285,17 +285,27 @@
 
 /* --- Global Reset and Typography --- */
 @font-face {
-    font-family: 'Lora';
-    src: url('fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype-variations');
-    font-weight: 400 700;
+    font-family: 'Beautique Display';
+    src: url('fonts/BeautiqueDisplay/BeautiqueDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Lora';
-    src: url('fonts/Lora/Lora-Italic-VariableFont_wght.ttf') format('truetype-variations');
-    font-weight: 400 700;
+    font-family: 'Beautique Display';
+    src: url('fonts/BeautiqueDisplay/BeautiqueDisplay-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beautique Display';
+    src: url('fonts/BeautiqueDisplay/BeautiqueDisplay-Italic.otf') format('opentype');
+    font-weight: 400;
     font-style: italic;
+    font-display: swap;
 }
 
 html, body {
@@ -306,7 +316,7 @@ html, body {
 
 body {
     /*background-color: var(--bg-cream);*/
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     /*color: #555;*/
     margin: 0;
     color: var(--ocean-800);
@@ -317,7 +327,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, .serif-font {
-    font-family: 'Lora', serif;
+    font-family: 'Beautique Display', serif;
     font-weight: 700;
     color: var(--text-dark);
 }
@@ -327,7 +337,7 @@ a:hover { color: var(--teal-main); }
 
 .section-padding { padding: 100px 0; }
 .text-teal { color: var(--teal-main); }
-.italic-serif { font-family: 'Lora', serif; font-style: italic; }
+.italic-serif { font-family: 'Beautique Display', serif; font-style: italic; }
 .section-padding-medium { padding: 60px 0; }
 
 @media (max-width: 768px) {
@@ -343,7 +353,7 @@ a:hover { color: var(--teal-main); }
 .navbar-brand {
     color: var(--teal-dark) !important;
     font-weight: 600;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Mobile specific navbar icon (hamburger on left) */
@@ -559,7 +569,7 @@ a:hover { color: var(--teal-main); }
 }
 
 .drawer-brand {
-    font-family: 'Lora', serif;
+    font-family: 'Beautique Display', serif;
     font-size: 2rem;
     color: var(--warm-white-100);
     font-weight: 500;
@@ -567,7 +577,7 @@ a:hover { color: var(--teal-main); }
 
 /* Links inside drawer */
 .drawer-link {
-    font-family: 'Lora', serif;
+    font-family: 'Beautique Display', serif;
     font-size: 1.8rem;
     color: var(--warm-white-100) !important;
     text-decoration: none;
@@ -695,7 +705,7 @@ a:hover { color: var(--teal-main); }
     display: flex; align-items: center; text-align: left;
 }
 .hero-title { font-size: 3.5rem; color: var(--text-dark); line-height: 1.1; margin-bottom: 1.5rem; }
-.hero-title span { font-family: 'Lora', serif; font-style: italic; color: var(--teal-main); }
+.hero-title span { font-family: 'Beautique Display', serif; font-style: italic; color: var(--teal-main); }
 .hero-subtitle { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 3rem; }
 
 /* Individual Tag Styling */
@@ -1108,13 +1118,13 @@ a:hover { color: var(--teal-main); }
 }
 
 .section-title { font-size: 3rem; color: var(--text-dark); margin: 20px 0; }
-.section-title span { font-family: 'Lora', serif; font-style: italic; color: var(--teal-main); }
+.section-title span { font-family: 'Beautique Display', serif; font-style: italic; color: var(--teal-main); }
 
 .therapy-card { border: none; border-radius: 25px; overflow: hidden; height: 100%; text-align: left; transition: 0.3s; }
 .therapy-card:hover { transform: translateY(-10px); }
 .card-img-top { height: 230px; object-fit: cover; }
 .card-body-custom { padding: 30px 25px; }
-.card-title-custom { font-family: 'Lora', serif; font-size: 1.5rem; color: var(--text-dark); margin-bottom: 15px; }
+.card-title-custom { font-family: 'Beautique Display', serif; font-size: 1.5rem; color: var(--text-dark); margin-bottom: 15px; }
 .card-text-custom { font-size: 0.9rem; color: var(--ocean-600); line-height: 1.6; margin-bottom: 25px; }
 .btn-learn { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--text-dark); display: inline-flex; align-items: center; gap: 8px; }
 
@@ -1139,9 +1149,9 @@ a:hover { color: var(--teal-main); }
 
 .step-card { background: white; font-size: 20px; border-radius: 20px; padding: 45px 40px; display: flex; align-items: flex-start; gap: 30px; text-align: left; margin-bottom: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); min-height: 180px; transition: 0.3s; }
 .step-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
-.step-number { font-size: 3rem; font-family: 'Lora', serif; line-height: 1; color: var(--card-green); flex-shrink: 0; }
+.step-number { font-size: 3rem; font-family: 'Beautique Display', serif; line-height: 1; color: var(--card-green); flex-shrink: 0; }
 .step-content { padding: 5px 0; }
-.step-content h4 { color: var(--teal-dark); font-size: 1.4rem; font-family: 'Lora', serif; margin-bottom: 15px; }
+.step-content h4 { color: var(--teal-dark); font-size: 1.4rem; font-family: 'Beautique Display', serif; margin-bottom: 15px; }
 .step-content p { margin: 0; line-height: 1.6; }
 
 @media (max-width: 767px) { .image-works-container { max-width: 90%; margin: 0 auto; } .danger-card { width: 80%; left: 10%; top: 20px; text-align: center; } .btn-request { width: 100%; justify-content: center; } .step-card { flex-direction: column; align-items: center; text-align: center; } }
@@ -1159,7 +1169,7 @@ a:hover { color: var(--teal-main); }
 .pricing-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
 .pricing-card.featured { border: 2px solid var(--teal-main); background-color: #ffffff; }
 .popular-tag { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--teal-main); color: white; padding: 5px 20px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; }
-.plan-name { font-family: 'Lora', serif; font-size: 1.8rem; color: var(--text-dark); margin-bottom: 20px; }
+.plan-name { font-family: 'Beautique Display', serif; font-size: 1.8rem; color: var(--text-dark); margin-bottom: 20px; }
 .plan-price { font-size: 3rem; font-weight: 700; color: var(--teal-dark); margin-bottom: 30px; }
 .plan-price span { font-size: 1rem; color: #888; font-weight: 400; }
 .plan-features { list-style: none; padding: 0; margin: 0; text-align: left; }
@@ -1178,8 +1188,8 @@ a:hover { color: var(--teal-main); }
 .section-testimonials { background-color: white; }
 .testimonial-box { background: var(--warm-white-200); border-radius: 30px; padding: 50px; position: relative; }
 .quote-icon { font-size: 3.5rem; color: var(--tag-pink); position: absolute; top: 20px; right: 40px; opacity: 0.5; }
-.testimonial-text { font-size: 1.4rem; font-family: 'Lora', serif; font-style: italic; color: var(--text-dark); margin-bottom: 30px; line-height: 1.5; }
-.testimonial-author h5 { font-family: 'Work Sans', sans-serif; font-weight: 600; color: var(--teal-dark); }
+.testimonial-text { font-size: 1.4rem; font-family: 'Beautique Display', serif; font-style: italic; color: var(--text-dark); margin-bottom: 30px; line-height: 1.5; }
+.testimonial-author h5 { font-family: 'Lato', sans-serif; font-weight: 600; color: var(--teal-dark); }
 .testimonial-nav .btn-icon { width: 50px; height: 50px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; }
 
 /* --- Section: Footer (Integrated from image) --- */
@@ -1199,7 +1209,7 @@ a:hover { color: var(--teal-main); }
 .btn-submit-signup { background-color: var(--olive-200); color: var(--text-dark); border: none; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 5px; }
 
 /* Footer Column styling */
-.footer-section-title { font-size: 1.5rem; color: var(--warm-white-50); font-family: 'Lora', serif; margin-bottom: 30px; font-weight: 600; }
+.footer-section-title { font-size: 1.5rem; color: var(--warm-white-50); font-family: 'Beautique Display', serif; margin-bottom: 30px; font-weight: 600; }
 .footer-list { list-style: none; padding: 0; margin: 0; }
 .footer-list li { margin-bottom: 12px; font-size: 0.9rem; color: var(--ocean-100); }
 
@@ -1374,7 +1384,7 @@ a:hover { color: var(--teal-main); }
 }
 
 .therapist-name {
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Beautique Display', serif;
     font-size: 1.6rem;
     color: var(--text-dark);
     margin-bottom: 5px;
@@ -1441,7 +1451,7 @@ a:hover { color: var(--teal-main); }
 }
 
 .plan-price {
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Beautique Display', serif;
     font-size: 2.5rem;
     color: var(--ocean-500);
 }
@@ -1567,7 +1577,7 @@ a:hover { color: var(--teal-main); }
 }
 
 .blog-card-title {
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Beautique Display', serif;
     font-size: 1.5rem;
     line-height: 1.3;
     color: var(--text-dark);
@@ -1630,7 +1640,7 @@ a:hover { color: var(--teal-main); }
 }
 
 .contact-us-section-title {
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Beautique Display', serif;
     font-size: 3rem;
     line-height: 1.1;
     color: var(--ocean-900);
@@ -1730,7 +1740,7 @@ a:hover { color: var(--teal-main); }
 /* Style for the placeholder specifically if needed */
 .contact-us-section-textarea::placeholder {
     color: #999;
-    font-family: 'Work Sans', sans-serif; /* Matching your brand font */
+    font-family: 'Lato', sans-serif; /* Matching your brand font */
 }
 /* --- Service Intro Section --- */
 .service-intro-section {
