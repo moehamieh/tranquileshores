@@ -132,15 +132,15 @@
         <div class="row align-items-start mb-5 g-5">
 
             <div class="col-lg-7">
-                <h2 class="footer-promo-title serif">Get a special 50% new patient discount and unleash your health.</h2>
+                <!-- <h2 class="footer-promo-title serif">Get a special 50% new patient discount and unleash your health.</h2> -->
             </div>
 
             <div class="col-lg-5 newsletter-col">
-                <label class="newsletter-label">Sign Up to Newsletter</label>
+                <!-- <label class="newsletter-label">Sign Up to Newsletter</label>
                 <div class="input-group-custom shadow-sm">
                     <input type="email" class="input-signup" placeholder="Your email address...">
                     <button class="btn-submit-signup"><i class="bi bi-arrow-right"></i></button>
-                </div>
+                </div> -->
             </div>
         </div>
 

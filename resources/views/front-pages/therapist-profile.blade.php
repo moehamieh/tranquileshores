@@ -85,13 +85,13 @@
             <div class="col-lg-8" data-aos="fade-up">
                 <div class="profile-main-content">
                     <div class="biography-section mb-5">
-                        <h2 class="section-title serif-font mb-4" style="color: #2C4A4A;">Short Biography</h2>
+                        <h2 class="section-title serif-font mb-4" style="color: #2C4A4A;"> Biography</h2>
                         <div class="mb-4 text-muted" style="line-height: 1.8; font-size: 1.1rem;" >
                             {!! $therapist->bio !!}
                         </div>
                     </div>
 
-                    <div class="education-section mb-5" style="font-size: 1.1rem;">
+                    <!-- <div class="education-section mb-5" style="font-size: 1.1rem;">
                         <h2 class="section-title serif-font mb-4" style="color: #2C4A4A;">Education & Experience</h2>
                         <div class="table-responsive">
                             <table class="table border-bottom" >
@@ -127,11 +127,11 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <div class="articles-section mb-5">
-                        <h2 class="section-title serif-font mb-4" style="color: #2C4A4A;">Doctor's Articles</h2>
+                        <h2 class="section-title serif-font mb-4" style="color: #2C4A4A;">Related Articles</h2>
                         <div class="row g-4">
                             @foreach($therapist->posts ?? [] as $article)
                                 <div class="col-md-6">
