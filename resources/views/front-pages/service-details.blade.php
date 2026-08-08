@@ -73,7 +73,7 @@
                         </div>
 
                         <!-- Why Therapy Works Section -->
-                        <div class="why-therapy-section mb-5">
+                        <!-- <div class="why-therapy-section mb-5">
                             <h2 class="section-title serif-font mb-4">Why Therapy Works</h2>
                             <div class="accordion custom-accordion" id="therapyAccordion">
                                 @php
@@ -115,7 +115,7 @@
                                     </div>
                                 @endforeach
                             </div>
-                        </div>
+                        </div> -->
 
                         <script>
                             document.addEventListener('DOMContentLoaded', function() {
@@ -153,7 +153,7 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <a href="{{route('alltherapists')}}" class="view-all-link text-dark fw-bold">View All Doctors <span>&rarr;</span></a>
+                            <a href="{{route('alltherapists')}}" class="view-all-link text-dark fw-bold">View All Therapists <span>&rarr;</span></a>
                         </div>
                     </div>
                 </div>

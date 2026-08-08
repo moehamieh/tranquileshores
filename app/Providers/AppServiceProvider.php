@@ -39,7 +39,7 @@ class AppServiceProvider extends ServiceProvider
                 $nav_services = Service::published()->orderBy('order')->get();
             }
             if (is_null($nav_therapists) && Schema::hasTable('therapists')) {
-                $nav_therapists = Therapist::published()->orderBy('name')->get();
+                $nav_therapists = Therapist::published()->orderBy('order', 'ASC')->get();
             }
 
             $view->with('contacts', $contacts ?? collect());

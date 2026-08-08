@@ -19,7 +19,7 @@ class FrontHomeController extends Controller
         $sliders = Slider::published()->orderBy('order')->get();
         $how_it_works = HowItWorks::orderBy('order')->get();
         $services = Service::published()->orderBy('order')->get();
-        $therapists = Therapist::published()->limit(3)->get();
+        $therapists = Therapist::orderBy('order', 'ASC')->published()->limit(3)->get();
         $plans = PricingPlan::published()->orderBy('order')->get();
         $posts = Post::published()->latest()->limit(3)->get();
 
@@ -42,7 +42,7 @@ class FrontHomeController extends Controller
     public function contact_us()
     {
         $services = Service::published()->get();
-        $therapists = Therapist::published()->get();
+        $therapists = Therapist::orderBy('order', 'ASC')->published()->get();
         return view('front-pages.contact-us', compact('services', 'therapists'));
     }
 
@@ -67,7 +67,7 @@ class FrontHomeController extends Controller
 
     public function alltherapists()
     {
-        $therapists = Therapist::published()->get();
+        $therapists = Therapist::orderBy('order', 'ASC')->published()->get();
         return view('front-pages.alltherapists', compact('therapists'));
     }
 
