@@ -14,7 +14,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('front/css/style_new.css')}}">
 
-<body>
+<body style="    font-family: 'Beautique Display', serif;
+">
 
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid px-lg-5">
