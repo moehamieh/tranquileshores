@@ -18,7 +18,7 @@
                 <div class="row justify-content-start" >
                     <div class="col-lg-6 hero-content-left">
                         <div class="hero-text-group">
-                            <h1 class="hero-title mb-3"><span>{{$firstPart}}</span> {{$restPart}}</h1>
+                            <h1 class="hero-title mb-3" style="color: #1b3648;">{{$firstPart}} {{$restPart}}</h1>
                             <span class="hero-subtitle">{!! $slider->description ?? '' !!}</span>
                         </div>
 
