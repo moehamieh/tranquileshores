@@ -27,7 +27,7 @@
                                 <span class="btn-text" style="font-weight: bold; font-size: 16px">Book a Session</span>
                                 <span class="btn-arrow">&rarr;</span>
                             </button>
-                            <button class="btn-how" style="font-size: 16px" onclick="window.location.href='{{route('home-page')}}#howitwork'">Learn How It Works &rarr;</button>
+                            <!-- <button class="btn-how" style="font-size: 16px" onclick="window.location.href='{{route('home-page')}}#howitwork'">Learn How It Works &rarr;</button> -->
                         </div>
 
                         <!-- Mobile image added for mobile layout -->
