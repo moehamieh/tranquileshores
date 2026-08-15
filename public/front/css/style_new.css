@@ -1813,3 +1813,25 @@ a:hover { color: var(--teal-main); }
         border-right: 1px solid #dee2e6 !important;
     }
 }
+/* --- Therapist Profile Hero (standalone, independent of .hero-card) --- */
+.therapist-hero-block {
+    padding: 0 20px 80px 20px;
+}
+
+.therapist-hero-card {
+    min-height: 80vh;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 991px) {
+    .therapist-hero-block {
+        padding: 0 15px 40px 15px;
+    }
+    .therapist-hero-card {
+        min-height: 45vh;
+        border-radius: 24px;
+    }
+}
