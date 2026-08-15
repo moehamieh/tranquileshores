@@ -6,8 +6,8 @@
         <div class="row align-items-center g-5">
             <div class="col-lg-7">
                 <div class="profile-header-content">
-                    <span class="badge bg-light text-muted px-3 py-2 rounded-pill mb-3 text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 1px;" >{{ $therapist->role }}</span>
-                    <h1 class="profile-name serif-font mb-4" style="font-size: 3.5rem; color: #2C4A4A;">{{ $therapist->name }}</h1>
+                    <span class="badge bg-light text-muted px-3 py-2 rounded-pill mb-3 text-uppercase fw-bold" style="font-size: 1em; letter-spacing: 1px;" >{{ $therapist->role }}</span>
+                    <h1 class="profile-name serif-font mb-4" style="font-size: 2.5em; color: #2C4A4A;">{{ $therapist->name }}</h1>
 
                     <div class="contact-info-list mb-4" style="font-size: 1.1rem;">
                         @if($therapist->phone)

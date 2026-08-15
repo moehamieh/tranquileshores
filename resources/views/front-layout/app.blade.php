@@ -150,7 +150,7 @@
 
             <div class="col-md-3">
                 <div class="footer-brand d-flex align-items-center" >
-<img src="{{asset('front/images/logo-white.png')}}" alt="Logo" >                </div>
+<img src="{{asset('front/images/slice6@2x.png')}}" alt="Logo" width="200">                </div>
                 <p class="brand-p">Start your path to psychological wellness with our specialists.</p>
                 <div class="footer-social-float d-flex align-items-center gap-3">
                     <div class="d-flex gap-2">

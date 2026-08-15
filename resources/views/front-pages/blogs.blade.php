@@ -68,7 +68,7 @@
                     </div>
 
                     <!-- Newsletter Widget -->
-                    <div class="p-4 rounded-5 shadow-sm mb-4 text-center" style="background-color: #4D9595;" data-aos="fade-up" data-aos-delay="200">
+                    <!-- <div class="p-4 rounded-5 shadow-sm mb-4 text-center" style="background-color: #4D9595;" data-aos="fade-up" data-aos-delay="200">
                         <h4 class="serif-font mb-3 text-white">Newsletter</h4>
                         <p class="text-white-50 small mb-4">Get the latest mental health tips delivered to your inbox.</p>
                         <input type="email" class="form-control rounded-pill border-0 mb-3 p-3" placeholder="Your Email">
@@ -76,7 +76,7 @@
                             <span class="btn-text">Subscribe</span>
                             <span class="btn-arrow">&rarr;</span>
                         </button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

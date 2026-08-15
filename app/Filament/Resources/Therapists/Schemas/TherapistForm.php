@@ -30,10 +30,8 @@ class TherapistForm
                             ->image()
                             ->directory('therapists')
                             ->visibility('public'),
-                        TextInput::make('phone')
-                            ->tel(),
-                        TextInput::make('office_phone')
-                            ->tel(),
+                        TextInput::make('phone'),
+                        TextInput::make('office_phone'),
                         TextInput::make('email')
                             ->label('Email address')
                             ->email(),

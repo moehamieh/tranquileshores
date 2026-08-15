@@ -66,7 +66,7 @@
                     <div class="service-main-content">
                         <!-- About Section -->
                         <div class="about-service-section mb-5">
-                            <h2 class="section-title serif-font mb-4">About <span>{{ $service->title }}</span></h2>
+                            <h2 class="section-title serif-font mb-4">About <span></span></h2>
                             <div class="mb-4">
                                 {!! $service->description !!}
                             </div>

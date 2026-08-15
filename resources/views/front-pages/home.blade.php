@@ -81,10 +81,10 @@
 
     <section class="section-who section-padding" data-aos="fade-up">
         <div class="container container-lg">
-            <h2 class="display-4 serif mb-3">At Tranquil Shores, you do not have to <span class="italic-serif text-teal">navigate it alone.</span></h2>
+            <h2 class="display-4 serif mb-3">A<span class=" text-teal"> At Tranquil Shores, we invite you to come as you are.</span></h2>
             <p class="text-muted mb-4 col-md-8 mx-auto" style="font-size: 1.25rem;">This is more than a therapy clinic. It is a space to pause. A space to exhale. A space to begin again.</p>
             <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto" style="padding-top: 10px;" >
-                 <span class="badge-who mb-3" style="font-size: 1.5em;">EXPLORE OUR SERVICES</span>
+                 <span class="badge-who mb-3" style="font-size: 1.5em; font-weight: normal;">EXPLORE OUR SERVICES</span>
             </p>
 
             <div class="row g-4">
@@ -107,13 +107,13 @@
 
     <section class="section-works section-padding" data-aos="fade-up" id="howitwork">
         <div class="container container-lg">
-            <h2 class="display-4 serif mb-3">How <span class="italic-serif text-teal">Online Therapy</span> Works</h2>
-            <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto">Compassionate therapy for every stage of life.</p>
+            <h2 class="display-4 serif mb-3"><span class="text-teal">Therapy, Made Simple</span> </h2>
+            <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto">Your path toward healing and feeling better starts here.</p>
 
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <div class="image-works-container">
-                        <img src="{{asset('front/images/80-home-2.webp')}}" alt="Online therapy session" class="w-100">
+                        <img src="{{asset('front/images/emergency2.jpg')}}" alt="Online therapy session" class="w-100">
                         <div class="danger-card">
                             <h5 class="serif mb-2">Are You in Danger?</h5>
                             <p class="small mb-3" style="opacity: 0.9;">Call 911 or use this service to get immediate help.</p>
@@ -164,7 +164,7 @@
     <section class="licensed-therapist section-padding" data-aos="fade-up">
         <div class="container container-lg text-center">
             <span class="badge-who mb-3">Our Team</span>
-            <h2 class="display-4 serif mb-5">Meet Our <span class="italic-serif text-teal">Licensed Therapists</span></h2>
+            <h2 class="display-4 serif mb-5"> <span class=" text-teal">Meet Our Licensed Therapists</span></h2>
 
             <div class="row g-4 text-start">
                 @foreach($therapists as $therapist)
@@ -292,7 +292,7 @@
                 <div class="row g-0 align-items-stretch">
                     <div class="col-lg-5">
                         <div class="contact-us-section-img">
-                            <img src="{{asset('front/images/80-home-6.webp')}}" alt="Healing Journey">
+                            <img src="{{asset('front/images/emergency.jpg')}}" alt="Healing Journey">
                         </div>
                     </div>
 

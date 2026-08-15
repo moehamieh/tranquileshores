@@ -1099,7 +1099,7 @@ a:hover { color: var(--teal-main); }
 
 /* --- Section: Who We Help (Card Grid) --- */
 .section-who {  text-align: center; }
-.badge-who { background: white; color: var(--text-dark); text-transform: uppercase; font-size: 0.7rem; font-weight: 600; padding: 5px 15px; border-radius: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.badge-who { background: white; color: var(--text-dark); text-transform: uppercase; font-size: 18px; font-weight: 600; padding: 5px 15px; border-radius: 50px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
 
 /* Section: Intro / Brand Message */
 .section-intro {
