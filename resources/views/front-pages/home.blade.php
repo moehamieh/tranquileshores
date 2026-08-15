@@ -201,53 +201,71 @@
     <section class="flexible-prices section-padding" data-aos="fade-up">
         <div class="container container-lg">
             <div class="d-flex flex-wrap justify-content-center text-center mb-5">
-                <div>
-                    <span class="badge-who mb-3">Our Prices</span>
-
-                    <h2 class="display-4 serif mb-2"><span class="italic-serif text-teal">Flexible</span> Therapy Plans</h2>
+                <div >
+                    <span class="badge-who mb-6"  >Our Prices</span>
+<div style="margin-top: 2em;">
+                    <h2 class="display-4 serif mb-2"><span class="italic-serif text-teal" >Flexible</span> Therapy Plans</h2>
+</div>
                     <p class="text-muted">Choose the support that fits your needs and lifestyle.</p>
                 </div>
             </div>
 
-            <div class="row g-4">
-                @foreach($plans as $plan)
-                    <div class="col-lg-4">
-                        <div class="price-card h-100">
-                            <div class="d-flex justify-content-between align-items-start mb-4">
-                                <div>
-                                    <span class="plan-label text-uppercase">{{ $plan->title }}</span>
-                                    <div class="plan-price">${{ number_format($plan->price, 0) }} <span>/ {{ strtoupper($plan->unit) }}</span></div>
-                                </div>
-                                <i class="bi {{ $plan->icon }} plan-logo"></i>
-                            </div>
-                            <div class="plan-desc" >{!! $plan->description !!}</div>
-                            <ul class="plan-features">
-                                @foreach($plan->features ?? [] as $feature)
-                                    <li><i class="bi bi-check2"></i> {{ $feature }}</li>
-                                @endforeach
-                            </ul>
-                            <button class="btn-plan-link mt-4" onclick="window.location.href='{{route('alltherapists')}}'">Book Now <i class="bi bi-arrow-right"></i></button>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
+          <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:24px;">
 
-            <div class="row mt-5">
-                <div class="col-12">
-                    <div class="pricing-info-box p-4 rounded-4 bg-light border text-center">
-                        <div class="row align-items-center">
-                            <div class="col-md-6 border-end-md">
-                                <h5 class="fw-bold mb-2">Sliding Scale</h5>
-                                <p class="text-muted small mb-0">For clients who do not have insurance or cannot afford the full fee – please inquire during your consultation call to see if there are any open spots.</p>
-                            </div>
-                            <div class="col-md-6 mt-3 mt-md-0">
-                                <h5 class="fw-bold mb-2">Cancellation Policy</h5>
-                                <p class="text-muted small mb-0">Your appointment has been reserved for you. Please give <strong>24 hours notice</strong> to cancel an appointment.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Card 1: Individual Therapy -->
+    <div style="flex:1 1 300px; max-width:340px; background-color:#F8F6F2; border-radius:24px; padding:45px 30px; text-align:center;">
+        <i class="bi bi-heart" style="font-size:2.2rem; color:#1B3648; margin-bottom:20px; display:inline-block;"></i>
+        <h3 style="font-family:'Beautique Display', serif; font-size:1.3rem; font-weight:700; color:#10202B; margin:15px 0 20px 0;">Individual Therapy</h3>
+        <div style="font-family:'Beautique Display', serif; font-size:2.6rem; font-weight:700; color:#10202B; line-height:1;">$145</div>
+        <div style="font-size:0.9rem; color:#517085; margin:10px 0 20px 0;">In person or virtual</div>
+        <p style="font-size:0.95rem; color:#1B3648; line-height:1.6; margin:0;">Personalized support for your well-being and growth.</p>
+    </div>
+
+    <!-- Card 2: Couples Therapy -->
+    <div style="flex:1 1 300px; max-width:340px; background-color:#F8F6F2; border-radius:24px; padding:45px 30px; text-align:center;">
+        <i class="bi bi-hearts" style="font-size:2.2rem; color:#1B3648; margin-bottom:20px; display:inline-block;"></i>
+        <h3 style="font-family:'Beautique Display', serif; font-size:1.3rem; font-weight:700; color:#10202B; margin:15px 0 20px 0;">Couples Therapy</h3>
+        <div style="font-family:'Beautique Display', serif; font-size:2.6rem; font-weight:700; color:#10202B; line-height:1;">$180</div>
+        <div style="font-size:0.9rem; color:#517085; margin:10px 0 20px 0;">In person or virtual</div>
+        <p style="font-size:0.95rem; color:#1B3648; line-height:1.6; margin:0;">Strengthen connection and navigate challenges together.</p>
+    </div>
+
+    <!-- Card 3: Student Therapist -->
+    <div style="flex:1 1 300px; max-width:340px; background-color:#F8F6F2; border-radius:24px; padding:45px 30px; text-align:center;">
+        <i class="bi bi-laptop" style="font-size:2.2rem; color:#1B3648; margin-bottom:20px; display:inline-block;"></i>
+        <h3 style="font-family:'Beautique Display', serif; font-size:1.3rem; font-weight:700; color:#10202B; margin:15px 0 20px 0;">Student Therapist</h3>
+        <div style="font-family:'Beautique Display', serif; font-size:2.6rem; font-weight:700; color:#10202B; line-height:1;">$50</div>
+        <div style="font-size:0.9rem; color:#517085; margin:10px 0 20px 0;">Virtual</div>
+        <p style="font-size:0.95rem; color:#1B3648; line-height:1.6; margin:0;">Affordable support with compassion and care.</p>
+    </div>
+
+</div>
+
+           <div style="display:flex; flex-wrap:wrap; gap:24px; background-color:#F8F6F2; border-radius:24px; padding:35px 40px;">
+
+    <!-- Sliding Scale -->
+    <div style="flex:1 1 300px; display:flex; align-items:flex-start; gap:20px; padding-right:30px; border-right:1px solid rgba(0,0,0,0.08);">
+        <div style="width:50px; height:50px; flex-shrink:0; border-radius:50%; border:1.5px solid #1B3648; display:flex; align-items:center; justify-content:center;">
+            <i class="bi bi-heart" style="font-size:1.2rem; color:#1B3648;"></i>
+        </div>
+        <div>
+            <h5 style="font-family:'Beautique Display', serif; font-size:1.05rem; font-weight:700; color:#10202B; margin:0 0 8px 0;">Sliding Scale</h5>
+            <p style="font-size:0.9rem; color:#517085; line-height:1.6; margin:0;">A limited number of sliding scale spots may be available. Please inquire during your consultation.</p>
+        </div>
+    </div>
+
+    <!-- Cancellation Policy -->
+    <div style="flex:1 1 300px; display:flex; align-items:flex-start; gap:20px;">
+        <div style="width:50px; height:50px; flex-shrink:0; border-radius:50%; border:1.5px solid #1B3648; display:flex; align-items:center; justify-content:center;">
+            <i class="bi bi-calendar-week" style="font-size:1.2rem; color:#1B3648;"></i>
+        </div>
+        <div>
+            <h5 style="font-family:'Beautique Display', serif; font-size:1.05rem; font-weight:700; color:#10202B; margin:0 0 8px 0;">Cancellation Policy</h5>
+            <p style="font-size:0.9rem; color:#517085; line-height:1.6; margin:0;">Please give 24 hours notice to cancel or reschedule an appointment.</p>
+        </div>
+    </div>
+
+</div>
         </div>
     </section>
     <section class="our-blogs section-padding" data-aos="fade-up">
