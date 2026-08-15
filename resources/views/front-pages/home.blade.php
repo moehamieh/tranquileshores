@@ -81,7 +81,7 @@
 
     <section class="section-who section-padding" data-aos="fade-up">
         <div class="container container-lg">
-            <h2 class="display-4 serif mb-3">A<span class=" text-teal"> At Tranquil Shores, we invite you to come as you are.</span></h2>
+            <h2 class="display-4 serif mb-3"><span class=" text-teal"> At Tranquil Shores, we invite you to come as you are.</span></h2>
             <p class="text-muted mb-4 col-md-8 mx-auto" style="font-size: 1.25rem;">This is more than a therapy clinic. It is a space to pause. A space to exhale. A space to begin again.</p>
             <p class="text-muted mb-5 col-md-8 col-lg-6 mx-auto" style="padding-top: 10px;" >
                  <span class="badge-who mb-3" style="font-size: 1.5em; font-weight: normal;">EXPLORE OUR SERVICES</span>
