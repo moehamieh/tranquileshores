@@ -19,7 +19,7 @@
 
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid px-lg-5">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="{{ route('home-page') }}">
 <img src="{{asset('front/images/logo.png')}}" alt="Logo" width="200">
         </a>
 
@@ -82,7 +82,8 @@
     </div>
     <div class="offcanvas-body d-flex flex-column">
         <div class="drawer-brand mb-5">
-<img src="{{asset('front/images/logo-white.png')}}" alt="Logo" >
+             <a href="{{ route('home-page') }}" class="text-decoration-none">
+<img src="{{asset('front/images/logo-white.png')}}" alt="Logo" ></a>
         </div>
         <ul class="navbar-nav flex-grow-1">
             <li class="nav-item"><a class="drawer-link active" href="{{route('home-page')}}">Home</a></li>
@@ -150,7 +151,8 @@
 
             <div class="col-md-3">
                 <div class="footer-brand d-flex align-items-center" >
-<img src="{{asset('front/images/slice6@2x.png')}}" alt="Logo" width="200">                </div>
+                    <a href="{{ route('home-page') }}" class="text-decoration-none">
+<img src="{{asset('front/images/slice6@2x.png')}}" alt="Logo" width="200">    </a>            </div>
                 <p class="brand-p">Start your path to psychological wellness with our specialists.</p>
                 <div class="footer-social-float d-flex align-items-center gap-3">
                     <div class="d-flex gap-2">
