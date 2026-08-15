@@ -178,6 +178,37 @@
         </div>
     </div>
 </section>
+@if($therapist->id == 1)
+    <div class="hero-section" >
+        <div class="hero-card position-relative" style="background-image: url('{{ asset('front/images/Karen-Office.jpeg') }}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="container-fluid px-lg-0"  >
+                <div class="row justify-content-start" >
+                    <div class="col-lg-6 hero-content-left">
+                     
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+   
+    @elseif($therapist->id ==2)
+    <div class="hero-section" >
+        <div class="hero-card position-relative" style="background-image: url('{{ asset('front/images/Tessa-Office.jpeg') }}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="container-fluid px-lg-0"  >
+                <div class="row justify-content-start" >
+                    <div class="col-lg-6 hero-content-left">
+                     
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+    @else
+    @endif
 
 <style>
     /* Inline styles moved to style.css */
